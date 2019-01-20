@@ -10,7 +10,9 @@
 //  TODO: iPhone X 全局截图的时候上面那个刘海放app图标
 //
 #import "AppDelegate.h"
-
+#if DEBUG
+#import "FLEXManager.h"
+#endif
 @interface AppDelegate ()
 
 @end

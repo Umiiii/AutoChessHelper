@@ -1,0 +1,22 @@
+
+/* Class = "UITabBarItem"; title = "设置"; ObjectID = "3y0-DA-319"; */
+"3y0-DA-319.title" = "设置";
+/* Class = "UINavigationItem"; title = "设置"; ObjectID = "7eH-Dt-0Do"; */
+"7eH-Dt-0Do.title" = "设置";
+
+/* Class = "UITabBarItem"; title = "计算助手"; ObjectID = "5Jf-xt-wgk"; */
+"5Jf-xt-wgk.title" = "计算助手";
+"oL4-tM-z4W.title" = "计算助手";
+
+
+
+
+/* Class = "UITabBarItem"; title = "数据与资料"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "数据与资料";
+/* Class = "UINavigationItem"; title = "数据与资料"; ObjectID = "tGz-Nt-ruv"; */
+"tGz-Nt-ruv.title" = "数据与资料";
+
+/* Class = "UINavigationItem"; title = "计算助手"; ObjectID = "gFv-ah-S5B"; */
+"gFv-ah-S5B.title" = "布局";
+/* Class = "UITabBarItem"; title = "布局"; ObjectID = "zNC-Qc-CY1"; */
+"zNC-Qc-CY1.title" = "布局";

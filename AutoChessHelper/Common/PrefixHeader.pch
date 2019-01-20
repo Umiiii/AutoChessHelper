@@ -35,7 +35,7 @@
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
-#define AppFontStyle() [UIFont systemFontOfSize:16]
+#define AppFontStyle() [UIFont systemFontOfSize:18]
 #define AppFontContentStyle() [UIFont systemFontOfSize:14]
 
 #endif /* BasicHeader_h */

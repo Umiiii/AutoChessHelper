@@ -11,8 +11,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CalculatorViewController : UIViewController
-
+@interface CalculatorViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,strong) UITableView* tableView;
+@property (nonatomic,copy) NSArray<UIImageView*>* onboardArray;
+@property (nonatomic,copy) NSArray<UIImageView*>* onhandArray;
 @end
 
 NS_ASSUME_NONNULL_END
