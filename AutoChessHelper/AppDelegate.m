@@ -5,7 +5,10 @@
 //  Created by Cirno on 2019/1/19.
 //  Copyright © 2019 Cirno. All rights reserved.
 //
-
+//
+//
+//  TODO: iPhone X 全局截图的时候上面那个刘海放app图标
+//
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
