@@ -12,6 +12,11 @@
 "Rank" = "段位";
 "NPC" = "野怪";
 "Changelog" = "更新日志";
+"Item" = "物品";
+"Item drop probability" = "每级野怪掉落此物品的概率";
+"Assemble" = "可合成";
+"Assemable Item" = "可合成物品";
+"Recipe" = "图纸";
 
 "Strength_Name"="力量";
 "Strength_Desc"="每點力量屬性將提升 18 生命、 0.09 每秒生命恢復，和 0.08% 魔法抗性。";

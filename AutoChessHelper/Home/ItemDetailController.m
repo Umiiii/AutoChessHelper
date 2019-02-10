@@ -191,11 +191,16 @@
 }
 -(NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
     if (section == 0){
-        return NSLocalizedString(@"Item drop probility", "");
+        return NSLocalizedString(@"Item drop probability", "");
 
     } return nil;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section == 1)
+        return  80.0f;
+    return UITableViewAutomaticDimension;
+}
 -(BOOL)checkRecipe:(NSString*)item{
     NSMutableDictionary* recipe = [[DOTAManager sharedInstance]recipe];
     for (NSString* key in [recipe allKeys]){

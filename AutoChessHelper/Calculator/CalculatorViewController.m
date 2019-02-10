@@ -249,10 +249,10 @@
             NSMutableArray*exp = [[DOTAManager sharedInstance]expDictionary];
           //  UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
            // NSString* expV = [NSString stringWithFormat:@"%ld",self.level-1];
-            int expReq = (int)exp[self.level];
+            int expReq = [exp[self.level] intValue];
             cell.textLabel.text = [NSString stringWithFormat:@"%@  %ld, %@ Exp⬆️, %f 📖 (%f 💰)",
                                    NSLocalizedString(@"Level", ""),(long)self.level,
-                                   exp[self.level],ceil((double)expReq/4),ceil(expReq/4)*5];
+                                   exp[self.level],ceil(expReq/4),ceil(expReq/4)*5];
             //cell.textLabel.textAlignment = NSTextAlignmentCenter;
             if (!self.stepper){
                 self.stepper = [[UIStepper alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];

@@ -12,6 +12,14 @@
 "Rank" = "Rank";
 "NPC" = "NPC";
 
+"Item" = "Item";
+"Assemble" = "Assemble";
+"Assemable Item" = "Assemable Item";
+"Recipe" = "Recipe";
+
+"Item drop probability" = "The probability of each level creeps that drop this item.";
+
+
 "Damage_Name"="Damage";
 "Damage_Desc"="Amount of damage a hero does per attack";
 "AttackRate_Name"="Attack Rate";

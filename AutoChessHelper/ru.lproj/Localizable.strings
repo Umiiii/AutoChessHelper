@@ -12,6 +12,11 @@
 "Rank" = "Ранг";
 "NPC" = "крипы";
 "Changelog" = "Изменения";
+"Item" = "Вещь";
+"Item drop probability" = "Вероятность каждого уровня ползет, что выпадет этот предмет.";
+"Assemble" = "Assemble";
+"Assemable Item" = "Assemable Item";
+"Recipe" = "Recipe";
 
 
 "Strength_Name"="Сила";
