@@ -13,7 +13,36 @@
 "NPC" = "野怪";
 "Changelog" = "更新日志";
 
-
+"Strength_Name"="力量";
+"Strength_Desc"="每點力量屬性將提升 18 生命、 0.09 每秒生命恢復，和 0.08% 魔法抗性。";
+"Agility_Name"="敏捷";
+"Agility_Desc"="每點敏捷屬性將提升 1 攻擊速度、0.16 護甲，和 0.05% 移動速度。";
+"Intelligence_Name"="智力";
+"Intelligence_Desc"="每點智力屬性將提升額外 12 魔力、0.05 每秒魔力恢復，和 0.07% 技能增強。";
+"Damage_Name"="傷害";
+"Damage_Desc"="英雄每次普通攻擊的傷害。";
+"AttackRate_Name"="普攻速率";
+"AttackRate_Desc"="每次普通攻擊的速度";
+"AttackRange_Name"="普攻距離";
+"AttackRange_Desc"="普通攻擊可打到的距離。";
+"ProjectileSpeed_Name"="投射速度";
+"ProjectileSpeed_Desc"="遠程普通攻擊的投射行進速度。";
+"ArmorPhysical_Name"="護甲";
+"ArmorPhysical_Desc"="護甲決定受到<font color=\"#71a9ea\">物理</font>攻擊時實際承受的傷害。";
+"MagicalResistance_Name"="魔法抗性";
+"MagicalResistance_Desc"="魔法抗性決定受到<font color=\"#ffffff\">魔法</font>攻擊時實際承受的傷害。";
+"MovementSpeed_Name"="移動速度";
+"MovementSpeed_Desc"="英雄在地圖上移動的速度。";
+"TurnRate_Name"="轉向速率";
+"TurnRate_Desc"="單位在原地轉向的速度";
+"SightRange_Name"="視野範圍";
+"SightRange_Desc"="英雄視野的距離。視野會被樹木和地形等障礙所阻擋，也會隨日夜變化而有所不同。";
+"MaxHealth_Name"="最大生命";
+"HealthRegen_Name"="生命恢復";
+"Health_Desc"="生命值代表英雄可承受多少傷害才會死亡。每點力量屬性將提升英雄的最大生命和生命恢復率。";
+"MaxMana_Name"="最大魔力";
+"ManaRegen_Name"="魔力恢復";
+"Mana_Desc"="魔力值代表英雄有多少魔力可供使用技能。每點智力屬性將提升英雄的最大魔力和魔力恢復率。";
 
 
 

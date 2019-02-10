@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CalculatorViewController loadPlist]:CalculatorViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "tmp[34]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DOTAManager allChess]:DOTAManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CalculatorViewController tableView:cellForRowAtIndexPath:]:CalculatorViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.hero">
+            </PersistentString>
+            <PersistentString
+               value = "self.hero[indexPath.row-1][i-1]">
+            </PersistentString>
+            <PersistentString
+               value = "cell.backgroundColor">
+            </PersistentString>
+            <PersistentString
+               value = "self.selectedArray">
+            </PersistentString>
+            <PersistentString
+               value = "self.selectedChess">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FilterController tableView:cellForRowAtIndexPath:]:FilterController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[dic allKeys]">
+            </PersistentString>
+            <PersistentString
+               value = "dic[@&quot;Modifiers&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ChessController tableView:cellForRowAtIndexPath:]:ChessController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[manager abilityImageName][ability]">
+            </PersistentString>
+            <PersistentString
+               value = "[manager abilityImageName][ability][@&quot;AbilityTextureName&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "[[manager abilityImageName] objectForKey:ability]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DOTAManager chessName]:DOTAManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DOTAManager getChessName]:DOTAManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "unitDictionary[@&quot;Level&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BuffFilterController tableView:cellForRowAtIndexPath:]:BuffFilterController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[manager comboAbilityType][self.filterOptions[indexPath.row]]">
+            </PersistentString>
+            <PersistentString
+               value = "self.filterOptions[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ChessDetailController tableView:cellForRowAtIndexPath:]:ChessDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CalculatorViewController viewDidLoad]:CalculatorViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.row">
+            </PersistentString>
+            <PersistentString
+               value = "0x600001ad00c0">
+            </PersistentString>
+            <PersistentString
+               value = "imageView.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ChessController updateFilterChess]:ChessController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.filterOptions">
+            </PersistentString>
+            <PersistentString
+               value = "array[l]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CalculatorViewController tableView:numberOfRowsInSection:]:CalculatorViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.hero">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

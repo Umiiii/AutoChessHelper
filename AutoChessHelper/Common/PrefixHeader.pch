@@ -38,6 +38,14 @@
 #define AppFontStyle() [UIFont systemFontOfSize:18]
 #define AppFontContentStyle() [UIFont systemFontOfSize:14]
 
+#define HPColor [UIColor colorWithRed:74/255.0f green:140/255.0f blue:46/255.0f alpha:1.0]
+#define MPColor [UIColor colorWithRed:69/255.0f green:111/255.0f blue:223/255.0f alpha:1.0]
+#define RGB(r, g, b) \
+[UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBA(r, g, b, a) \
+[UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define HRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1]
+
 #endif /* BasicHeader_h */
 
 // Include any system framework and library headers here that should be included in all compilation units.

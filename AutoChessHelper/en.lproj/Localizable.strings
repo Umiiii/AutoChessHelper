@@ -12,7 +12,30 @@
 "Rank" = "Rank";
 "NPC" = "NPC";
 
-
+"Damage_Name"="Damage";
+"Damage_Desc"="Amount of damage a hero does per attack";
+"AttackRate_Name"="Attack Rate";
+"AttackRate_Desc"="Speed at which the hero attacks";
+"AttackRange_Name"="Attack Range";
+"AttackRange_Desc"="Distance from which the hero can attack";
+"ProjectileSpeed_Name"="Projectile Speed";
+"ProjectileSpeed_Desc"="Travel speed of attack projectile used by ranged heroes";
+"ArmorPhysical_Name"="Armor";
+//"ArmorPhysical_Name"="Armor determines how much damage a hero deflects from <font color=\"#71a9ea\">Physical</font> attacks.";
+"MagicalResistance_Name"="Magic Resistance";
+"MagicalResistance_Desc"="Magic Resistance determines how much damage a hero deflects from <font color=\"#ffffff\">Magical</font> attacks.";
+"MovementSpeed_Name"="Movement Speed";
+"MovementSpeed_Desc"="Speed at which a hero moves across the map";
+"TurnRate_Name"="Turn Rate";
+"TurnRate_Desc"="Speed at which a hero turns in place";
+"SightRange_Name"="Vision Range";
+"SightRange_Desc"="Distance a hero can see if not blocked by an obstacle -- values normally differ during Daytime / Nighttime";
+"MaxHealth_Name"="Max Health";
+"HealthRegen_Name"="Health Regen";
+"Health_Desc"="Health determines how much damage a hero can take before dying. Each point of strength increases a hero's max health and health regen.";
+"MaxMana_Name"="Max Mana";
+"ManaRegen_Name"="Mana Regen";
+"Mana_Desc"="Mana determines how many abilities a hero can use. Each point of intelligence increases a hero's max mana and mana regen.";
 
 
 

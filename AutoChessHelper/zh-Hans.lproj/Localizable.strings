@@ -15,6 +15,36 @@
 
 
 
+"Strength_Name"="力量";
+"Strength_Desc"="每点力量等于18点生命值和0.09点/秒生命恢复和0.08%魔法抗性。";
+"Agility_Name"="敏捷";
+"Agility_Desc"="每点敏捷等于1攻击速度和0.16点护甲和0.05%移动速度。";
+"Intelligence_Name"="智力";
+"Intelligence_Desc"="每点智力等于12点额外魔法，0.05点/秒魔法恢复和0.07%技能增强。";
+"Damage_Name"="攻击力";
+"Damage_Desc"="每次物理攻击造成的伤害";
+"AttackRate_Name"="攻击频率";
+"AttackRate_Desc"="英雄发动物理攻击的速度";
+"AttackRange_Name"="攻击距离";
+"AttackRange_Desc"="英雄发动物理攻击的最远距离";
+"ProjectileSpeed_Name"="弹道速度";
+"ProjectileSpeed_Desc"="远程英雄的物理攻击弹道行进速度";
+"ArmorPhysical_Name"="护甲";
+"ArmorPhysical_Desc"="护甲决定了英雄受到<font color=\"#71a9ea\">物理</font>攻击时减少的伤害";
+"MagicalResistance_Name"="魔法抗性";
+"MagicalResistance_Desc"="魔法抗性决定了英雄受到<font color=\"#ffffff\">魔法</font>攻击时减少的伤害。";
+"MovementSpeed_Name"="移动速度";
+"MovementSpeed_Desc"="英雄在地图上移动时的速度";
+"TurnRate_Name"="转身速率";
+"TurnRate_Desc"="英雄转身的速度";
+"SightRange_Name"="视野距离";
+"SightRange_Desc"="没有障碍物阻挡的情况下英雄所见的距离 -- 数值一般会随白天／夜晚而变化";
+"MaxHealth_Name"="生命值上限";
+"HealthRegen_Name"="生命恢复";
+"Health_Desc"="生命值决定了英雄承受多少伤害才会死亡。每点力量均会提升英雄的生命值上限和生命恢复。";
+"MaxMana_Name"="魔法值上限";
+"ManaRegen_Name"="魔法恢复";
+"Mana_Desc"="魔法值决定了英雄可以使用多少次技能。每点智力均会提升英雄的魔法值上限和魔法恢复。";
 
 
 

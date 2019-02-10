@@ -20,13 +20,14 @@
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+     self.navigationController.hidesBottomBarWhenPushed =YES;
     [self.view addSubview:self.tableView];
 }
 
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0)
-        return SCREEN_WIDTH/4 +20;
+        return 30 +20;
     else
         return 60;
 }
@@ -36,7 +37,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         UICollectionViewFlowLayout* layout = [[UICollectionViewFlowLayout alloc]init];
         //layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.itemSize = CGSizeMake(SCREEN_WIDTH/4, SCREEN_WIDTH/4 +20);
+        layout.itemSize = CGSizeMake(SCREEN_WIDTH/4, 30 +20);
         layout.minimumLineSpacing = 0.0;
         layout.minimumInteritemSpacing = 0.0;
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -44,7 +45,7 @@
         layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
 
 
-        HomeCollectionView* collectionView = [[HomeCollectionView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH/4 +20) collectionViewLayout:layout];
+        HomeCollectionView* collectionView = [[HomeCollectionView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 30 +20) collectionViewLayout:layout];
         collectionView.backgroundColor = [UIColor clearColor];
         collectionView.scrollEnabled = NO;
         collectionView.delegate = self;
@@ -77,7 +78,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"第%ld分区--第%ld个Item", indexPath.section, indexPath.row);
+   // NSLog(@"第%ld分区--第%ld个Item", indexPath.section, indexPath.row);
+    if (indexPath.row == 0){
+        ChessController* chessController = [[ChessController alloc]init];
+
+        [self.navigationController pushViewController:(UIViewController *)chessController animated:YES];
+    }
+    if (indexPath.row == 1){
+        RankTableViewController * rankCtr = [[RankTableViewController alloc]init];
+        [self.navigationController pushViewController:rankCtr animated:YES];
+    }
 }
 
 
