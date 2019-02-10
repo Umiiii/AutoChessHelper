@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		211B095D2210166A0021BBBD /* gamedata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 211B095C2210166A0021BBBD /* gamedata.plist */; };
+		211B0967221018560021BBBD /* AutoChessHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B0966221018560021BBBD /* AutoChessHelperTests.m */; };
+		211B096E221018AD0021BBBD /* DOTAManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 215A01E621FDF5FE0085C678 /* DOTAManager.h */; };
+		211B096F221018AD0021BBBD /* DOTAManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 215A01E721FDF5FE0085C678 /* DOTAManager.m */; };
+		211B097522102E5A0021BBBD /* ItemDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B097422102E5A0021BBBD /* ItemDetailController.m */; };
+		211B097822102EF20021BBBD /* ItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B097722102EF20021BBBD /* ItemController.m */; };
 		212911E221F4DD7D0087128B /* MiniHero.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212911E121F4DD7D0087128B /* MiniHero.xcassets */; };
 		212911E321F4DEB50087128B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212911E521F4DEB50087128B /* Main.storyboard */; };
 		212911F021F4DFB90087128B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 212911F221F4DFB90087128B /* Localizable.strings */; };
@@ -25,6 +30,8 @@
 		21CDE9BD22078D39004C255F /* BuffFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CDE9BC22078D39004C255F /* BuffFilterController.m */; };
 		21CDE9C02207A13C004C255F /* RankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CDE9BF2207A13C004C255F /* RankTableViewController.m */; };
 		21CDE9C32208247A004C255F /* CalcResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CDE9C22208247A004C255F /* CalcResultViewController.m */; };
+		21E4D6AE2210334800C60271 /* Item.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E4D6AD2210334800C60271 /* Item.xcassets */; };
+		21E4D6B02210633400C60271 /* cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21E4D6AF2210633400C60271 /* cell.xib */; };
 		21E6ACCD220623C9005994D7 /* ChessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6ACCC220623C9005994D7 /* ChessController.m */; };
 		21E6ACD122062A2C005994D7 /* FilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6ACD022062A2C005994D7 /* FilterController.m */; };
 		21EC15DA21F2DEC300591147 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EC15D921F2DEC300591147 /* AppDelegate.m */; };
@@ -40,8 +47,25 @@
 		83B4773B594AF2C060411C62 /* libPods-AutoChessHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B3537A7BE7C6FD6C8307F8 /* libPods-AutoChessHelper.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		211B0969221018560021BBBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21EC15CD21F2DEC300591147 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21EC15D421F2DEC300591147;
+			remoteInfo = AutoChessHelper;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		211B095C2210166A0021BBBD /* gamedata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gamedata.plist; sourceTree = "<group>"; };
+		211B0964221018560021BBBD /* AutoChessHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoChessHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		211B0966221018560021BBBD /* AutoChessHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoChessHelperTests.m; sourceTree = "<group>"; };
+		211B0968221018560021BBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211B097322102E5A0021BBBD /* ItemDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDetailController.h; sourceTree = "<group>"; };
+		211B097422102E5A0021BBBD /* ItemDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemDetailController.m; sourceTree = "<group>"; };
+		211B097622102EF20021BBBD /* ItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ItemController.h; path = /Users/cirno/Desktop/ChessHelper/iOS/AutoChessHelper/AutoChessHelper/Home/ItemController.h; sourceTree = "<absolute>"; };
+		211B097722102EF20021BBBD /* ItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ItemController.m; path = /Users/cirno/Desktop/ChessHelper/iOS/AutoChessHelper/AutoChessHelper/Home/ItemController.m; sourceTree = "<absolute>"; };
 		212911E121F4DD7D0087128B /* MiniHero.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MiniHero.xcassets; sourceTree = "<group>"; };
 		212911E421F4DEB50087128B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		212911E721F4DEC20087128B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -73,6 +97,8 @@
 		21CDE9BF2207A13C004C255F /* RankTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RankTableViewController.m; path = AutoChessHelper/Home/RankTableViewController.m; sourceTree = SOURCE_ROOT; };
 		21CDE9C12208247A004C255F /* CalcResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcResultViewController.h; sourceTree = "<group>"; };
 		21CDE9C22208247A004C255F /* CalcResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcResultViewController.m; sourceTree = "<group>"; };
+		21E4D6AD2210334800C60271 /* Item.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Item.xcassets; path = AutoChessHelper/Item.xcassets; sourceTree = SOURCE_ROOT; };
+		21E4D6AF2210633400C60271 /* cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cell.xib; sourceTree = "<group>"; };
 		21E6ACCB220623C9005994D7 /* ChessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChessController.h; sourceTree = "<group>"; };
 		21E6ACCC220623C9005994D7 /* ChessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChessController.m; sourceTree = "<group>"; };
 		21E6ACCF22062A2C005994D7 /* FilterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterController.h; sourceTree = "<group>"; };
@@ -104,6 +130,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		211B0961221018560021BBBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21EC15D221F2DEC300591147 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,6 +154,15 @@
 				61B3537A7BE7C6FD6C8307F8 /* libPods-AutoChessHelper.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		211B0965221018560021BBBD /* AutoChessHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				211B0966221018560021BBBD /* AutoChessHelperTests.m */,
+				211B0968221018560021BBBD /* Info.plist */,
+			);
+			path = AutoChessHelperTests;
 			sourceTree = "<group>";
 		};
 		2129120121F55C300087128B /* Model */ = {
@@ -168,6 +210,7 @@
 			children = (
 				215A01E921FDF95E0085C678 /* Resources */,
 				21EC15D721F2DEC300591147 /* AutoChessHelper */,
+				211B0965221018560021BBBD /* AutoChessHelperTests */,
 				21EC15D621F2DEC300591147 /* Products */,
 				E0869A972B491A3BFD82112D /* Pods */,
 				0ABBF7CD082D4C361BE8B6EE /* Frameworks */,
@@ -178,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				21EC15D521F2DEC300591147 /* AutoChessHelper.app */,
+				211B0964221018560021BBBD /* AutoChessHelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +240,7 @@
 				21EC15D821F2DEC300591147 /* AppDelegate.h */,
 				21EC15D921F2DEC300591147 /* AppDelegate.m */,
 				212911E521F4DEB50087128B /* Main.storyboard */,
+				21E4D6AD2210334800C60271 /* Item.xcassets */,
 				21EC15E421F2DEC400591147 /* Assets.xcassets */,
 				21A6AB4521F61F3900FC5E9E /* Spell.xcassets */,
 				212911E121F4DD7D0087128B /* MiniHero.xcassets */,
@@ -210,6 +255,10 @@
 		21F1581421F450010050A2E1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				211B097622102EF20021BBBD /* ItemController.h */,
+				211B097722102EF20021BBBD /* ItemController.m */,
+				211B097322102E5A0021BBBD /* ItemDetailController.h */,
+				211B097422102E5A0021BBBD /* ItemDetailController.m */,
 				21CDE9BE2207A13C004C255F /* RankTableViewController.h */,
 				21CDE9BF2207A13C004C255F /* RankTableViewController.m */,
 				21F1581521F450180050A2E1 /* HomeViewController.h */,
@@ -218,6 +267,7 @@
 				21EDEDDA21F4ABCC002FD31C /* HomeCollectionViewCell.m */,
 				21EDEDDC21F4B0E0002FD31C /* HomeCollectionView.h */,
 				21EDEDDD21F4B0E0002FD31C /* HomeCollectionView.m */,
+				21E4D6AF2210633400C60271 /* cell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -273,6 +323,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		211B0963221018560021BBBD /* AutoChessHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 211B096B221018560021BBBD /* Build configuration list for PBXNativeTarget "AutoChessHelperTests" */;
+			buildPhases = (
+				211B0960221018560021BBBD /* Sources */,
+				211B0961221018560021BBBD /* Frameworks */,
+				211B0962221018560021BBBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				211B096A221018560021BBBD /* PBXTargetDependency */,
+			);
+			name = AutoChessHelperTests;
+			productName = AutoChessHelperTests;
+			productReference = 211B0964221018560021BBBD /* AutoChessHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		21EC15D421F2DEC300591147 /* AutoChessHelper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21EC15EE21F2DEC400591147 /* Build configuration list for PBXNativeTarget "AutoChessHelper" */;
@@ -300,6 +368,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Cirno;
 				TargetAttributes = {
+					211B0963221018560021BBBD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 21EC15D421F2DEC300591147;
+					};
 					21EC15D421F2DEC300591147 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -322,17 +394,27 @@
 			projectRoot = "";
 			targets = (
 				21EC15D421F2DEC300591147 /* AutoChessHelper */,
+				211B0963221018560021BBBD /* AutoChessHelperTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		211B0962221018560021BBBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21EC15D321F2DEC300591147 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21E4D6B02210633400C60271 /* cell.xib in Resources */,
 				21A6AB4621F61F3900FC5E9E /* Spell.xcassets in Resources */,
 				212911F021F4DFB90087128B /* Localizable.strings in Resources */,
+				21E4D6AE2210334800C60271 /* Item.xcassets in Resources */,
 				21A5C54E21FA0C860000100D /* recipe.txt.plist in Resources */,
 				212911E221F4DD7D0087128B /* MiniHero.xcassets in Resources */,
 				212911E321F4DEB50087128B /* Main.storyboard in Resources */,
@@ -375,18 +457,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		211B0960221018560021BBBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211B096E221018AD0021BBBD /* DOTAManager.h in Sources */,
+				211B096F221018AD0021BBBD /* DOTAManager.m in Sources */,
+				211B0967221018560021BBBD /* AutoChessHelperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21EC15D121F2DEC300591147 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				21E6ACCD220623C9005994D7 /* ChessController.m in Sources */,
 				21EC15DA21F2DEC300591147 /* AppDelegate.m in Sources */,
+				211B097822102EF20021BBBD /* ItemController.m in Sources */,
 				21EC15EB21F2DEC400591147 /* main.m in Sources */,
 				21F1581B21F450890050A2E1 /* CalculatorViewController.m in Sources */,
 				2129120021F55C2A0087128B /* Chess.m in Sources */,
 				21F1581F21F452D00050A2E1 /* PlanViewController.m in Sources */,
 				21CDE9BA220783A5004C255F /* ChessDetailCollectionView.m in Sources */,
 				21CDE9C02207A13C004C255F /* RankTableViewController.m in Sources */,
+				211B097522102E5A0021BBBD /* ItemDetailController.m in Sources */,
 				215A01E821FDF5FE0085C678 /* DOTAManager.m in Sources */,
 				21E6ACD122062A2C005994D7 /* FilterController.m in Sources */,
 				21EDEDDB21F4ABCC002FD31C /* HomeCollectionViewCell.m in Sources */,
@@ -400,6 +494,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		211B096A221018560021BBBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21EC15D421F2DEC300591147 /* AutoChessHelper */;
+			targetProxy = 211B0969221018560021BBBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		212911E521F4DEB50087128B /* Main.storyboard */ = {
@@ -436,6 +538,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		211B096C221018560021BBBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RSQKB2C72;
+				INFOPLIST_FILE = AutoChessHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = umi.AutoChessHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoChessHelper.app/AutoChessHelper";
+			};
+			name = Debug;
+		};
+		211B096D221018560021BBBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RSQKB2C72;
+				INFOPLIST_FILE = AutoChessHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = umi.AutoChessHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoChessHelper.app/AutoChessHelper";
+			};
+			name = Release;
+		};
 		21EC15EC21F2DEC400591147 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -593,6 +733,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		211B096B221018560021BBBD /* Build configuration list for PBXNativeTarget "AutoChessHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211B096C221018560021BBBD /* Debug */,
+				211B096D221018560021BBBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		21EC15D021F2DEC300591147 /* Build configuration list for PBXProject "AutoChessHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

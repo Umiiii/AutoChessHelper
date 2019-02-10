@@ -88,6 +88,13 @@
         RankTableViewController * rankCtr = [[RankTableViewController alloc]init];
         [self.navigationController pushViewController:rankCtr animated:YES];
     }
+    if (indexPath.row == 2){
+
+    }
+    if (indexPath.row == 3){
+        ItemController* ctr = [[ItemController alloc]init];
+        [self.navigationController pushViewController:ctr animated:YES];
+    }
 }
 
 

@@ -110,7 +110,7 @@
 //        cell.detailTextLabel.attributedText = [self attributedStringWithHTMLString:NSLocalizedString(detailTextString, "")];
 
         NSString* propertiesStr = [NSString stringWithFormat:@"%@_buff",raw];
-        NSString* propertiesValue = @"";
+       
 
         NSMutableDictionary * dic = [manager abilityImageName][propertiesStr];
         NSString* modifierStr = [NSString stringWithFormat:@"modifier_%@",propertiesStr];

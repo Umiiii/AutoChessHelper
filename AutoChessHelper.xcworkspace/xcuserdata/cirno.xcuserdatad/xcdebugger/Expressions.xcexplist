@@ -11,6 +11,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[ItemDetailController viewDidLoad]:ItemDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.itemName">
+            </PersistentString>
+            <PersistentString
+               value = "self.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[DOTAManager allChess]:DOTAManager.m">
       </ContextState>
       <ContextState
@@ -37,10 +48,10 @@
          contextName = "-[FilterController tableView:cellForRowAtIndexPath:]:FilterController.m">
          <PersistentStrings>
             <PersistentString
-               value = "[dic allKeys]">
+               value = "dic[@&quot;Modifiers&quot;]">
             </PersistentString>
             <PersistentString
-               value = "dic[@&quot;Modifiers&quot;]">
+               value = "[dic allKeys]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -48,13 +59,13 @@
          contextName = "-[ChessController tableView:cellForRowAtIndexPath:]:ChessController.m">
          <PersistentStrings>
             <PersistentString
-               value = "[manager abilityImageName][ability]">
-            </PersistentString>
-            <PersistentString
                value = "[manager abilityImageName][ability][@&quot;AbilityTextureName&quot;]">
             </PersistentString>
             <PersistentString
                value = "[[manager abilityImageName] objectForKey:ability]">
+            </PersistentString>
+            <PersistentString
+               value = "[manager abilityImageName][ability]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -120,6 +131,9 @@
                value = "self.hero">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ItemController checkRecipe:]:ItemController.m">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

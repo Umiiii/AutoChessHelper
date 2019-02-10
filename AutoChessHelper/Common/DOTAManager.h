@@ -24,7 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableDictionary *abilityImageName;
 @property (nonatomic, strong) NSMutableDictionary *abilityDictionary;
 @property (nonatomic, strong) NSMutableDictionary *comboAbilityType;
+@property (nonatomic, strong) NSMutableArray *expDictionary;
+@property (nonatomic, strong) NSMutableDictionary *gamedata;
+@property (nonatomic, strong) NSMutableDictionary* items;
 @property (nonatomic, strong) NSMutableDictionary* units;
+@property (nonatomic, strong) NSMutableDictionary* recipe;
+@property (nonatomic, strong) NSMutableDictionary* allDropItemProbility;
 @property (nonatomic, strong) NSArray<NSArray<Chess*>*>* allChess;
 @property (nonatomic, strong) NSArray<Chess*>* allChessNotByMana;
 @end

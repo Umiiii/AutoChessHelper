@@ -7,7 +7,7 @@
 //
 
 #import "RankTableViewController.h"
-
+#define rankCount 39
 @interface RankTableViewController ()
 
 @end
@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -27,24 +27,38 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    if(section == 0)
+        return 1;
+
+    return rankCount;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+   
+    UITableViewCell*   cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    if (indexPath.section == 0){
+
+        cell.textLabel.text = @"Steam Name";
+        cell.detailTextLabel.text = @"steamid";
+    } else {
+        NSString* imageName = [NSString stringWithFormat:@"level_%ld_png",(long)indexPath.row];
+        cell.imageView.image = [UIImage imageNamed:imageName];
+        cell.imageView.image = [cell.imageView.image  imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        NSString* localizedString = [NSString stringWithFormat:@"text_player_level_%ld",indexPath.row];
+        cell.textLabel.text = NSLocalizedString(localizedString, "");
+        cell.imageView.tintColor = [UIColor grayColor];
+    }
     return cell;
 }
-*/
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 /*
 // Override to support conditional editing of the table view.

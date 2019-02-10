@@ -89,53 +89,8 @@
 
 -(NSMutableDictionary*)comboAbilityType{
     if (!_comboAbilityType){
-        _comboAbilityType = [[NSMutableDictionary alloc]init];
-        _comboAbilityType[@"is_warrior"]=@{@"ability":@"is_warrior_buff",@"condition":@3,@"type":@1};
-        _comboAbilityType[@"is_warrior1"]=@{@"ability":@"is_warrior_buff_plus",@"condition":@6,@"type":@1};
-        _comboAbilityType[@"is_mage"]=@{@"ability":@"is_mage_buff",@"condition":@3,@"type":@3};
-        _comboAbilityType[@"is_mage1"]=@{@"ability":@"is_mage_buff_plus",@"condition":@6,@"type":@3};
-        _comboAbilityType[@"is_warlock"]=@{@"ability":@"is_warlock_buff",@"condition":@3,@"type":@2};
-        _comboAbilityType[@"is_warlock1"]=@{@"ability":@"is_warlock_buff_plus",@"condition":@6,@"type":@2};
-        _comboAbilityType[@"is_mech"]=@{@"ability":@"is_mech_buff",@"condition":@2,@"type":@1};
-        _comboAbilityType[@"is_mech1"]=@{@"ability":@"is_mech_buff_plus",@"condition":@4,@"type":@1};
-        _comboAbilityType[@"is_assassin"]=@{@"ability":@"is_assassin_buff",@"condition":@3,@"type":@1};
-        _comboAbilityType[@"is_assassin1"]=@{@"ability":@"is_assassin_buff_plus",@"condition":@6,@"type":@1};
-        _comboAbilityType[@"is_hunter"]=@{@"ability":@"is_hunter_buff",@"condition":@3,@"type":@1};
-        _comboAbilityType[@"is_hunter1"]=@{@"ability":@"is_hunter_buff_plus",@"condition":@6,@"type":@1};
-        _comboAbilityType[@"is_knight"]=@{@"ability":@"is_knight_buff",@"condition":@2,@"type":@1};
-        _comboAbilityType[@"is_knight1"]=@{@"ability":@"is_knight_buff_plus",@"condition":@4,@"type":@1};
-        _comboAbilityType[@"is_knight11"]=@{@"ability":@"is_knight_buff_plus_plus",@"condition":@6,@"type":@1};
-        _comboAbilityType[@"is_shaman"]=@{@"ability":@"is_shaman",@"condition":@2,@"type":@5};
-        _comboAbilityType[@"is_demonhunter"]=@{@"ability":@"is_demonhunter",@"condition":@0,@"type":@1};
-        _comboAbilityType[@"is_troll"]=@{@"ability":@"is_troll_buff",@"condition":@2,@"type":@1};
-        _comboAbilityType[@"is_troll1"]=@{@"ability":@"is_troll_buff_plus",@"condition":@4,@"type":@2};
-        _comboAbilityType[@"is_beast"]=@{@"ability":@"is_beast_buff",@"condition":@2,@"type":@2};
-        _comboAbilityType[@"is_beast1"]=@{@"ability":@"is_beast_buff_plus",@"condition":@4,@"type":@2};
-        _comboAbilityType[@"is_beast11"]=@{@"ability":@"is_beast_buff_plus_plus",@"condition":@6,@"type":@2};
-        _comboAbilityType[@"is_elf"]=@{@"ability":@"is_elf_buff",@"condition":@2,@"type":@1};
-        _comboAbilityType[@"is_elf1"]=@{@"ability":@"is_elf_buff_plus",@"condition":@4,@"type":@1};
-        _comboAbilityType[@"is_elf11"]=@{@"ability":@"is_elf_buff_plus_plus",@"condition":@6,@"type":@1};
-        _comboAbilityType[@"is_human"]=@{@"ability":@"is_human_buff",@"condition":@2,@"type":@1};
-        _comboAbilityType[@"is_human1"]=@{@"ability":@"is_human_buff_plus",@"condition":@4,@"type":@1};
-        _comboAbilityType[@"is_human11"]=@{@"ability":@"is_human_buff_plus_plus",@"condition":@6,@"type":@1};
-        _comboAbilityType[@"is_undead"]=@{@"ability":@"is_undead_buff",@"condition":@2,@"type":@3};
-        _comboAbilityType[@"is_undead1"]=@{@"ability":@"is_undead_buff_plus",@"condition":@4,@"type":@3};
-        _comboAbilityType[@"is_undead11"]=@{@"ability":@"is_undead_buff_plus_plus",@"condition":@6,@"type":@3};
-        _comboAbilityType[@"is_orc"]=@{@"ability":@"is_orc_buff",@"condition":@2,@"type":@1};
-        _comboAbilityType[@"is_orc1"]=@{@"ability":@"is_orc_buff_plus",@"condition":@4,@"type":@1};
-        _comboAbilityType[@"is_orc11"]=@{@"ability":@"is_orc_buff_plus_plus",@"condition":@6,@"type":@1};
-        _comboAbilityType[@"is_naga"]=@{@"ability":@"is_naga_buff",@"condition":@2,@"type":@2};
-        _comboAbilityType[@"is_naga1"]=@{@"ability":@"is_naga_buff_plus",@"condition":@4,@"type":@2};
-        _comboAbilityType[@"is_goblin"]=@{@"ability":@"is_goblin_buff",@"condition":@3,@"type":@4};
-        _comboAbilityType[@"is_goblin1"]=@{@"ability":@"is_goblin_buff",@"condition":@6,@"type":@1};
-        _comboAbilityType[@"is_element"]=@{@"ability":@"is_element_buff",@"condition":@2,@"type":@1};
-        _comboAbilityType[@"is_element1"]=@{@"ability":@"is_element_buff_plus",@"condition":@4,@"type":@1};
-        _comboAbilityType[@"is_element11"]=@{@"ability":@"is_element_buff_plus_plus",@"condition":@6,@"type":@1};
-        _comboAbilityType[@"is_demon"]=@{@"ability":@"is_demon_buff",@"condition":@0,@"type":@1};
-        _comboAbilityType[@"is_dwarf"]=@{@"ability":@"is_dwarf_buff",@"condition":@1,@"type":@1};
-        _comboAbilityType[@"is_ogre"]=@{@"ability":@"is_ogre_buff",@"condition":@1,@"type":@1};
-        _comboAbilityType[@"is_dragon"]=@{@"ability":@"is_dragon",@"condition":@3,@"type":@1};
-        _comboAbilityType[@"is_druid"]=@{@"ability":@"is_druid",@"condition":@2,@"type":@1};
+        _comboAbilityType = _gamedata[@"combo_ability_type"];
+
     }
     return _comboAbilityType;
 }
@@ -240,6 +195,14 @@
     return _modelName;
 }
 
+-(NSDictionary*)gamedata{
+    if (!_gamedata){
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"gamedata" ofType:@"plist"];
+        _gamedata = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    }
+    return _gamedata;
+}
+
 -(NSDictionary*) abilityImageName{
     if (!_abilityImageName){
 
@@ -249,12 +212,28 @@
     }
     return _abilityImageName;
 }
+-(NSDictionary*) items{
+    if (!_items){
 
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"npc_items_custom.txt" ofType:@"plist"];
+        _items = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath][@"DOTAAbilities"];
+   
+    }
+    return _items;
+}
 - (NSMutableDictionary*)abilityDictionary{
     if (!_abilityDictionary){
-        
+        _abilityDictionary = [self gamedata][@"chess_ability_list"];
     }
     return _abilityDictionary;
+}
+
+- (NSMutableArray*)expDictionary {
+    if (!_expDictionary)
+    {
+        _expDictionary = [self gamedata][@"SetCustomXPRequiredToReachNextLevel"];
+    }
+    return _expDictionary;
 }
 
 -(NSArray*)checkBuff:(NSArray*)ch{
@@ -288,6 +267,24 @@
         _units = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath][@"DOTAUnits"];
     }
     return _units;
+}
+
+- (NSMutableDictionary*)allDropItemProbility{
+    if (!_allDropItemProbility){
+        NSMutableDictionary* gamedata = [[DOTAManager sharedInstance]gamedata];
+        NSMutableDictionary* tmp = gamedata[@"gailv"]; // 4
+        _allDropItemProbility = tmp;
+        
+    }
+    return _allDropItemProbility;
+}
+
+- (NSMutableDictionary*)recipe{
+    if (!_recipe){
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"recipe.txt" ofType:@"plist"];
+        _recipe = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    }
+    return _recipe;
 }
 
 @end

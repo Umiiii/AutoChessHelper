@@ -246,12 +246,16 @@
     } else if (indexPath.section == 2){
 
         if (indexPath.row == 0){
-            NSArray*exp = [[NSArray alloc]initWithObjects:@(0),@(1),@(2),@(4),@(8),@(16),@(32),@(56),@(88),@(0), nil];
+            NSMutableArray*exp = [[DOTAManager sharedInstance]expDictionary];
           //  UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-            cell.textLabel.text = [NSString stringWithFormat:@"%@  %ld, %@ Exp⬆️",NSLocalizedString(@"Level", ""),(long)self.level,exp[self.level]];
+           // NSString* expV = [NSString stringWithFormat:@"%ld",self.level-1];
+            int expReq = (int)exp[self.level];
+            cell.textLabel.text = [NSString stringWithFormat:@"%@  %ld, %@ Exp⬆️, %f 📖 (%f 💰)",
+                                   NSLocalizedString(@"Level", ""),(long)self.level,
+                                   exp[self.level],ceil((double)expReq/4),ceil(expReq/4)*5];
             //cell.textLabel.textAlignment = NSTextAlignmentCenter;
             if (!self.stepper){
-                self.stepper = [[UIStepper alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-104, (44-29)/2, 0, 0)];
+                self.stepper = [[UIStepper alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
                 _stepper.value = 1;
                 _stepper.stepValue = 1;
                 _stepper.maximumValue = 10;
@@ -276,7 +280,8 @@
             [str addAttribute:NSFontAttributeName value:AppFontContentStyle() range:NSMakeRange(0, str.length)];
             self.gameInfoView.numberOfLines = 0;
             self.gameInfoView.attributedText =  str;
-            [cell addSubview:_stepper];
+            //[cell addSubview:_stepper];
+            cell.accessoryView = _stepper;
 
 
         } else if (indexPath.row == 1){
@@ -295,7 +300,8 @@
                 cell.textLabel.text = [NSString stringWithFormat:@"%@ ⚠️%@ %ld",cell.textLabel.text,NSLocalizedString(@"Fatigue damage", ""),self.round-50];
 
             }
-            [cell addSubview:self.roundStepper];
+           // [cell addSubview:self.roundStepper];
+            cell.accessoryView = self.roundStepper;
 
         } else if (indexPath.row == 2){
            //  UITableViewCell*cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];//
