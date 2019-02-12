@@ -23,6 +23,11 @@
     self.allChess = [[DOTAManager sharedInstance]allChessNotByMana];
     self.filterOptions = [[NSArray alloc]init];
     [self updateFilterChess];
+    NSArray* ssrName = [[DOTAManager sharedInstance]gamedata][@"chess_list_ssr"];
+    self.ssr = [[NSMutableArray alloc]init];
+    for (NSString* ssr in ssrName){
+        
+    }
 
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -130,17 +135,6 @@
        // array[i].ability = [[array[i].ability reverseObjectEnumerator]allObjects];
     }
 
-
-//    self.filterChess = [array sortedArrayUsingComparator:^NSComparisonResult(id  obj1, id  obj2) {
-//
-//        Chess* c1 = obj1;
-//        Chess* c2 = obj2;
-//        NSString* obj1str = c1.ability[0];
-//        NSString* obj2str = c2.ability[0];
-//        if ([obj1str compare:obj2str] == NSOrderedSame)
-//            return [c1.ability[1] compare:c2.ability[1]];
-//        return [obj1str compare:obj2str];
-//    }];
     int k = 0;
     if (self.filterMode == FilterModeOr)
         for (int i = 0;i<[array count]-1;i++){
@@ -163,38 +157,6 @@
             }
         }
     self.filterChess = [array copy];
-//    for (int i=0;i<[array count]-1;i++){
-//        for (int j=1;j<[array count];j++){
-//            int iweightScore = 0;
-//            int jweightScore = 0;
-//            for (NSString* options in self.filterOptions){
-//                for (NSString* ability in array[i].ability)
-//                    if (ability == options){
-//                        iweightScore ++;
-//                    }
-//                for (NSString* ability in array[j].ability)
-//                    if (ability == options){
-//                        jweightScore ++;
-//                    }
-//
-//            }
-//            if (iweightScore < jweightScore){
-//                Chess* tmp = array[i];
-//                array[i] = array[j];
-//                array[j] = tmp;
-//            }
-//        }
-//    }
-//    self.filterChess = [array copy];
-//    self.filterChess = [array sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
-//        Chess* chess1 = obj1;
-//        Chess* chess2 = obj2;
-//
-//        if ([chess1.ability[0] compare:chess2.ability[0] options:NSLiteralSearch] == NSOrderedSame)
-//            if ([chess1.ability count] >=2 && [chess2.ability count]>=2)
-//                return [chess1.ability[1] compare:chess2.ability[1] options:NSLiteralSearch];
-//        return [chess1.ability[0] compare:chess2.ability[0] options:NSLiteralSearch];
-//    }];
 
 }
 -(void)setFilterOptionsByDelegate:(NSArray*)filterOptions{
@@ -202,6 +164,7 @@
     self.filterOptions = filterOptions;
     [self updateFilterChess];
     NSIndexSet* indexSet = [[NSIndexSet alloc]initWithIndex:0];
+    if ([self.tableView numberOfSections] == 1)
     [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 -(void)filterClick{
@@ -215,16 +178,20 @@
 }
 
 -(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-
+    if (section ==1)
+        return @"SSR";
     return nil;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-
+//    if ([self.filterOptions count] == 0)
+//        return 2;
     return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (section == 1)
+        return [self.ssr count];
     return [self.filterChess count];
 }
 
@@ -240,6 +207,21 @@
     UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     NSArray* color = [[NSArray alloc]initWithObjects:HRGB(0xBBBBBB),HRGB(0xBBBBFF),HRGB(0x6666FF),HRGB(0xFF00FF),
     HRGB(0xFF8800),nil];
+    if (indexPath.section == 1){
+        NSMutableAttributedString * str = [
+                                           [NSMutableAttributedString alloc]initWithString:[NSLocalizedString(self.ssr[indexPath.row], "") stringByReplacingOccurrencesOfString:@"" withString:@""]];
+        cell.textLabel.attributedText = str;
+        NSMutableDictionary*tmpDictionary = [[DOTAManager sharedInstance]units][self.ssr[indexPath.row]];
+
+        NSString* tmp = tmpDictionary[@"Model"];
+        NSUInteger pos1 = [tmp rangeOfString:@"/" options:NSBackwardsSearch].location+1;
+        NSUInteger pos2 = [tmp length]-5 ;
+        NSString* imageName = [NSString stringWithFormat:@"npc_dota_hero_%@_png",
+                                                          [tmp substringWithRange:NSMakeRange(pos1, pos2-pos1)]];
+        cell.imageView.image = [UIImage imageNamed:imageName];
+        return cell;
+
+    }
    // if ([self.filterOptions count] == 0){
     cell.imageView.image = [UIImage imageNamed:self.filterChess[indexPath.row].imageName];
     NSMutableAttributedString * str = [

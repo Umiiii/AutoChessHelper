@@ -245,115 +245,6 @@
         }
     } else if (indexPath.section == 2){
 
-        if (indexPath.row == 0){
-            NSMutableArray*exp = [[DOTAManager sharedInstance]expDictionary];
-          //  UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-           // NSString* expV = [NSString stringWithFormat:@"%ld",self.level-1];
-            int expReq = [exp[self.level] intValue];
-            cell.textLabel.text = [NSString stringWithFormat:@"%@  %ld, %@ Exp⬆️, %f 📖 (%f 💰)",
-                                   NSLocalizedString(@"Level", ""),(long)self.level,
-                                   exp[self.level],ceil(expReq/4),ceil(expReq/4)*5];
-            //cell.textLabel.textAlignment = NSTextAlignmentCenter;
-            if (!self.stepper){
-                self.stepper = [[UIStepper alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
-                _stepper.value = 1;
-                _stepper.stepValue = 1;
-                _stepper.maximumValue = 10;
-                _stepper.minimumValue = 1;
-                [_stepper addTarget:self action:@selector(stepperClick) forControlEvents:UIControlEventValueChanged];
-            }
-            NSString* localizedString = [NSString stringWithFormat:@"DOTA_Tooltip_modifier_hero_level%ld_Description",(long)self.level];
-            localizedString = NSLocalizedString(localizedString, nil);
-            localizedString = [localizedString stringByReplacingOccurrencesOfString:@"\%\%" withString:@"\%"];
-            //            localizedString = [localizedString stringByReplacingOccurrencesOfString:@"($1)" withString:@""];
-            //            localizedString = [localizedString stringByReplacingOccurrencesOfString:@"($2)" withString:@""];
-            //            localizedString = [localizedString stringByReplacingOccurrencesOfString:@"($3)" withString:@""];
-            //            localizedString = [localizedString stringByReplacingOccurrencesOfString:@"($4)" withString:@""];
-            //            localizedString = [localizedString stringByReplacingOccurrencesOfString:@"($5)" withString:@""];
-            localizedString = [localizedString stringByReplacingOccurrencesOfString:@"<br>" withString:@" "];
-            localizedString = [localizedString stringByReplacingOccurrencesOfString:@"Chess:" withString:@""];
-            localizedString = [NSString stringWithFormat:@"<center>%@</center>",localizedString];
-            NSMutableAttributedString *str =  [
-                                               [NSMutableAttributedString alloc] initWithData:[NSLocalizedString(localizedString, nil) dataUsingEncoding:NSUnicodeStringEncoding] options:@{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType}
-                                               documentAttributes:nil
-                                               error:nil];
-            [str addAttribute:NSFontAttributeName value:AppFontContentStyle() range:NSMakeRange(0, str.length)];
-            self.gameInfoView.numberOfLines = 0;
-            self.gameInfoView.attributedText =  str;
-            //[cell addSubview:_stepper];
-            cell.accessoryView = _stepper;
-
-
-        } else if (indexPath.row == 1){
-           //  UITableViewCell*cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-            cell.textLabel.text = [NSString stringWithFormat:@"Round %ld",(long)self.round];
-            if (!self.roundStepper){
-                self.roundStepper = [[UIStepper alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-104, (44-29)/2, 0, 0)];
-                self.roundStepper.value = 1;
-                self.roundStepper.stepValue = 1;
-                self.roundStepper.maximumValue = 100;
-                [self.roundStepper addTarget:self action:@selector(roundStepperClick) forControlEvents:UIControlEventValueChanged];
-
-                // Fatigue = self.round - 50;
-            }
-            if (self.round > 50){
-                cell.textLabel.text = [NSString stringWithFormat:@"%@ ⚠️%@ %ld",cell.textLabel.text,NSLocalizedString(@"Fatigue damage", ""),self.round-50];
-
-            }
-           // [cell addSubview:self.roundStepper];
-            cell.accessoryView = self.roundStepper;
-
-        } else if (indexPath.row == 2){
-           //  UITableViewCell*cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];//
-            NSString* text = [NSString stringWithFormat:@"pve_%ld",(long)self.round];
-            cell.textLabel.text = NSLocalizedString(text, "");
-            NSString* imageName = [[NSString alloc]init]   ;
-            switch (self.round) {
-                case 1:
-                case 2:
-                case 3:
-                    imageName = @"npc_dota_hero_creep_radiant_png";
-                    break;
-                case 10:
-                    imageName = @"npc_dota_neutral_granite_golem_png";
-                    break;
-                case 15:
-                    imageName = @"npc_dota_neutral_giant_wolf_png";
-                    break;
-                case 20:
-                    imageName = @"npc_dota_lone_druid_bear_png";
-                    break;
-                case 25:
-                    imageName = @"npc_dota_neutral_enraged_wildkin_png";
-                    break;
-                case 30:
-                    imageName = @"npc_dota_neutral_big_thunder_lizard_png";
-                    break;
-                case 35:
-                    imageName = @"npc_dota_neutral_black_dragon_png";
-                    break;
-                case 40:
-                    imageName = @"npc_dota_neutral_dark_troll_png";
-                    break;
-                case 45:
-                    imageName = @"npc_dota_hero_default_png";
-                    break;
-                case 50:
-                    imageName = @"npc_dota_hero_roshan_png";
-                    break;
-                default:
-                    break;
-            }
-            imageName = [NSString stringWithFormat:@"full_%@",imageName];
-            cell.imageView.autoresizingMask = ( UIViewAutoresizingNone );
-            cell.imageView.autoresizesSubviews = NO;
-            cell.imageView.layer.masksToBounds = YES;
-            cell.imageView.bounds = CGRectMake(0, 0, 128, 72);
-            cell.imageView.frame = CGRectMake(0, 0, 128, 72);
-            cell.imageView.contentMode = UIViewContentModeTop;
-            cell.imageView.image = [self imageFromImage:[UIImage imageNamed:imageName]inRect:CGRectMake(0, 0, 128, 72)];
-           
-        }
     }
 
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -389,6 +280,7 @@
 
 
 - (void) roundStepperClick{
+    DLog(@"click");
     self.round = (NSInteger)_roundStepper.value;
     NSIndexPath *indexPath=[NSIndexPath indexPathForRow:1 inSection:2];
     NSIndexPath *indexPath2=[NSIndexPath indexPathForRow:2 inSection:2];

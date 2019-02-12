@@ -59,6 +59,7 @@
 		<integer>56</integer>
 		<integer>88</integer>
 		<integer>128</integer>
+		<integer>0</integer>
 	</array>
 	<key>ability_behavior_list</key>
 	<dict>
@@ -1537,6 +1538,8 @@
 	<dict>
 		<key>item_banjia</key>
 		<dict>
+			<key>count</key>
+			<integer>6</integer>
 			<key>level</key>
 			<integer>2</integer>
 			<key>p</key>
@@ -1544,16 +1547,18 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
-				<integer>5</integer>
-				<integer>5</integer>
-				<real>6.666666666666667</real>
-				<real>6.666666666666667</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>40</integer>
+				<integer>40</integer>
 			</array>
 		</dict>
 		<key>item_biaoqiang</key>
 		<dict>
+			<key>count</key>
+			<integer>6</integer>
 			<key>level</key>
 			<integer>2</integer>
 			<key>p</key>
@@ -1561,16 +1566,18 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
-				<integer>5</integer>
-				<integer>5</integer>
-				<real>6.666666666666667</real>
-				<real>6.666666666666667</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>40</integer>
+				<integer>40</integer>
 			</array>
 		</dict>
 		<key>item_dafu</key>
 		<dict>
+			<key>count</key>
+			<integer>3</integer>
 			<key>level</key>
 			<integer>4</integer>
 			<key>p</key>
@@ -1582,29 +1589,33 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
+				<integer>10</integer>
+				<integer>20</integer>
 			</array>
 		</dict>
 		<key>item_duangun</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_emodaofeng</key>
 		<dict>
+			<key>count</key>
+			<integer>3</integer>
 			<key>level</key>
 			<integer>3</integer>
 			<key>p</key>
@@ -1614,65 +1625,73 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
 				<integer>10</integer>
-				<integer>10</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
 			</array>
 		</dict>
 		<key>item_fashichangpao</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_gongjizhizhua</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_huifuzhihuan</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_huoliqiu</key>
 		<dict>
+			<key>count</key>
+			<integer>6</integer>
 			<key>level</key>
 			<integer>2</integer>
 			<key>p</key>
@@ -1680,16 +1699,18 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
-				<integer>5</integer>
-				<integer>5</integer>
-				<real>6.666666666666667</real>
-				<real>6.666666666666667</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>40</integer>
+				<integer>40</integer>
 			</array>
 		</dict>
 		<key>item_jixianfaqiu</key>
 		<dict>
+			<key>count</key>
+			<integer>3</integer>
 			<key>level</key>
 			<integer>3</integer>
 			<key>p</key>
@@ -1699,31 +1720,35 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
 				<integer>10</integer>
-				<integer>10</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
 			</array>
 		</dict>
 		<key>item_kangmodoupeng</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_kuojian</key>
 		<dict>
+			<key>count</key>
+			<integer>6</integer>
 			<key>level</key>
 			<integer>2</integer>
 			<key>p</key>
@@ -1731,33 +1756,37 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
-				<integer>5</integer>
-				<integer>5</integer>
-				<real>6.666666666666667</real>
-				<real>6.666666666666667</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>40</integer>
+				<integer>40</integer>
 			</array>
 		</dict>
 		<key>item_kuweishi</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_miyinchui</key>
 		<dict>
+			<key>count</key>
+			<integer>6</integer>
 			<key>level</key>
 			<integer>2</integer>
 			<key>p</key>
@@ -1765,16 +1794,18 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
-				<integer>5</integer>
-				<integer>5</integer>
-				<real>6.666666666666667</real>
-				<real>6.666666666666667</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>40</integer>
+				<integer>40</integer>
 			</array>
 		</dict>
 		<key>item_molifazhang</key>
 		<dict>
+			<key>count</key>
+			<integer>6</integer>
 			<key>level</key>
 			<integer>2</integer>
 			<key>p</key>
@@ -1782,16 +1813,18 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
-				<integer>5</integer>
-				<integer>5</integer>
-				<real>6.666666666666667</real>
-				<real>6.666666666666667</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>40</integer>
+				<integer>40</integer>
 			</array>
 		</dict>
 		<key>item_shengzheyiwu</key>
 		<dict>
+			<key>count</key>
+			<integer>3</integer>
 			<key>level</key>
 			<integer>4</integer>
 			<key>p</key>
@@ -1803,12 +1836,14 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
+				<integer>10</integer>
+				<integer>20</integer>
 			</array>
 		</dict>
 		<key>item_shenmifazhang</key>
 		<dict>
+			<key>count</key>
+			<integer>3</integer>
 			<key>level</key>
 			<integer>4</integer>
 			<key>p</key>
@@ -1820,97 +1855,109 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
+				<integer>10</integer>
+				<integer>20</integer>
 			</array>
 		</dict>
 		<key>item_suozijia</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_wangguan</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_xixuemianju</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_xuwubaoshi</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_yuandun</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 		<key>item_zhenfenbaoshi</key>
 		<dict>
+			<key>count</key>
+			<integer>3</integer>
 			<key>level</key>
 			<integer>3</integer>
 			<key>p</key>
@@ -1920,27 +1967,29 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<real>3.3333333333333335</real>
-				<real>6.666666666666667</real>
 				<integer>10</integer>
-				<integer>10</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
 			</array>
 		</dict>
 		<key>item_zhiliaozhihuan</key>
 		<dict>
+			<key>count</key>
+			<integer>12</integer>
 			<key>level</key>
 			<integer>1</integer>
 			<key>p</key>
 			<array>
-				<real>1.6666666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>4.166666666666667</real>
-				<real>3.3333333333333335</real>
-				<real>1.6666666666666667</real>
-				<real>2.5</real>
-				<real>2.5</real>
-				<real>1.6666666666666667</real>
-				<real>0.83333333333333337</real>
+				<integer>20</integer>
+				<integer>40</integer>
+				<integer>50</integer>
+				<integer>40</integer>
+				<integer>20</integer>
+				<integer>30</integer>
+				<integer>30</integer>
+				<integer>20</integer>
+				<integer>10</integer>
 			</array>
 		</dict>
 	</dict>

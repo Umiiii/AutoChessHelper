@@ -10,6 +10,7 @@
 #import "HomeCollectionView.h"
 #import "ChessController.h"
 #import "RankTableViewController.h"
+#import "NPCViewController.h"
 #import "ItemController.h"
 NS_ASSUME_NONNULL_BEGIN
 

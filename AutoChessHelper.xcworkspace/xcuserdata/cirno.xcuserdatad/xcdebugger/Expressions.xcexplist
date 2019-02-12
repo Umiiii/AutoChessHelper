@@ -22,11 +22,33 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[NPCViewController viewDidLoad]:NPCViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.round">
+            </PersistentString>
+            <PersistentString
+               value = "self.npc">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NPCViewController tableView:cellForRowAtIndexPath:]:NPCViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.npc">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[DOTAManager allChess]:DOTAManager.m">
       </ContextState>
       <ContextState
          contextName = "-[CalculatorViewController tableView:cellForRowAtIndexPath:]:CalculatorViewController.m">
          <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
             <PersistentString
                value = "self.hero">
             </PersistentString>
@@ -48,16 +70,19 @@
          contextName = "-[FilterController tableView:cellForRowAtIndexPath:]:FilterController.m">
          <PersistentStrings>
             <PersistentString
-               value = "dic[@&quot;Modifiers&quot;]">
+               value = "[dic allKeys]">
             </PersistentString>
             <PersistentString
-               value = "[dic allKeys]">
+               value = "dic[@&quot;Modifiers&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "-[ChessController tableView:cellForRowAtIndexPath:]:ChessController.m">
          <PersistentStrings>
+            <PersistentString
+               value = "self.ssr">
+            </PersistentString>
             <PersistentString
                value = "[manager abilityImageName][ability][@&quot;AbilityTextureName&quot;]">
             </PersistentString>
@@ -66,6 +91,9 @@
             </PersistentString>
             <PersistentString
                value = "[manager abilityImageName][ability]">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -81,6 +109,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[ChessDetailController tableView:cellForRowAtIndexPath:]:ChessDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[BuffFilterController tableView:cellForRowAtIndexPath:]:BuffFilterController.m">
          <PersistentStrings>
             <PersistentString
@@ -88,14 +124,6 @@
             </PersistentString>
             <PersistentString
                value = "self.filterOptions[indexPath.row]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[ChessDetailController tableView:cellForRowAtIndexPath:]:ChessDetailController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "indexPath.row">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

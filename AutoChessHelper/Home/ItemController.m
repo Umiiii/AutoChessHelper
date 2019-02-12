@@ -180,7 +180,7 @@ originImage = [self imageFromImage:originImage inRect:CGRectMake(0, 0, 44, 32)];
 
 -(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     if (section < [self.item count])
-        return [NSString stringWithFormat:@"Class %ld",section];
+        return [NSString stringWithFormat:@"Class %ld",section+1];
     else
         return NSLocalizedString(@"Advanced Item", "");
 }

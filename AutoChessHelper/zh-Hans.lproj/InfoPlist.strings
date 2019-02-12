@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  AutoChessHelper
+
+  Created by Cirno on 2019/2/11.
+  Copyright © 2019 Cirno. All rights reserved.
+*/
+"CFBundleDisplayName" = "自走棋助手";

@@ -149,6 +149,8 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0)
+        return ;
     ItemDetailController* ctr = [[ItemDetailController alloc]init];
     NSString* itemName;
     if (indexPath.section == 1)
@@ -231,7 +233,8 @@
                 UILabel* prob = [[UILabel alloc]initWithFrame:CGRectMake(i*(SCREEN_WIDTH/9), 20, (SCREEN_WIDTH/9), 20)];
                 prob.textAlignment = NSTextAlignmentCenter;
                 NSArray* p = [[DOTAManager sharedInstance]allDropItemProbility][self.itemName][@"p"];
-                float prob1 = [p[i] floatValue];
+                int count =[[[DOTAManager sharedInstance]allDropItemProbility][self.itemName][@"count"] intValue];
+                float prob1 = [p[i] floatValue] / count;
                 prob.font = [UIFont systemFontOfSize:9.0f];
                 prob.text = [NSString stringWithFormat:@"%.2f%%",prob1];
                 [cell addSubview:title];

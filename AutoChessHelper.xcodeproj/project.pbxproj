@@ -13,6 +13,9 @@
 		211B096F221018AD0021BBBD /* DOTAManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 215A01E721FDF5FE0085C678 /* DOTAManager.m */; };
 		211B097522102E5A0021BBBD /* ItemDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B097422102E5A0021BBBD /* ItemDetailController.m */; };
 		211B097822102EF20021BBBD /* ItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B097722102EF20021BBBD /* ItemController.m */; };
+		211D21AD2211570200E3CC71 /* NPCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211D21AC2211570200E3CC71 /* NPCDetailViewController.m */; };
+		211D21B022115A3800E3CC71 /* NPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211D21AF22115A3800E3CC71 /* NPCViewController.m */; };
+		211D21C12211703900E3CC71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 211D21C32211703900E3CC71 /* InfoPlist.strings */; };
 		212911E221F4DD7D0087128B /* MiniHero.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212911E121F4DD7D0087128B /* MiniHero.xcassets */; };
 		212911E321F4DEB50087128B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212911E521F4DEB50087128B /* Main.storyboard */; };
 		212911F021F4DFB90087128B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 212911F221F4DFB90087128B /* Localizable.strings */; };
@@ -32,6 +35,7 @@
 		21CDE9C32208247A004C255F /* CalcResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CDE9C22208247A004C255F /* CalcResultViewController.m */; };
 		21E4D6AE2210334800C60271 /* Item.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E4D6AD2210334800C60271 /* Item.xcassets */; };
 		21E4D6B02210633400C60271 /* cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21E4D6AF2210633400C60271 /* cell.xib */; };
+		21E4D6B622114AF200C60271 /* NPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4D6B422114AF200C60271 /* NPCViewController.m */; };
 		21E6ACCD220623C9005994D7 /* ChessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6ACCC220623C9005994D7 /* ChessController.m */; };
 		21E6ACD122062A2C005994D7 /* FilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6ACD022062A2C005994D7 /* FilterController.m */; };
 		21EC15DA21F2DEC300591147 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EC15D921F2DEC300591147 /* AppDelegate.m */; };
@@ -66,6 +70,19 @@
 		211B097422102E5A0021BBBD /* ItemDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemDetailController.m; sourceTree = "<group>"; };
 		211B097622102EF20021BBBD /* ItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ItemController.h; path = /Users/cirno/Desktop/ChessHelper/iOS/AutoChessHelper/AutoChessHelper/Home/ItemController.h; sourceTree = "<absolute>"; };
 		211B097722102EF20021BBBD /* ItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ItemController.m; path = /Users/cirno/Desktop/ChessHelper/iOS/AutoChessHelper/AutoChessHelper/Home/ItemController.m; sourceTree = "<absolute>"; };
+		211D21AB2211570200E3CC71 /* NPCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPCDetailViewController.h; sourceTree = "<group>"; };
+		211D21AC2211570200E3CC71 /* NPCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPCDetailViewController.m; sourceTree = "<group>"; };
+		211D21AE22115A3700E3CC71 /* NPCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NPCViewController.h; path = /Users/cirno/Desktop/ChessHelper/iOS/AutoChessHelper/AutoChessHelper/Home/NPCViewController.h; sourceTree = "<absolute>"; };
+		211D21AF22115A3800E3CC71 /* NPCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NPCViewController.m; path = /Users/cirno/Desktop/ChessHelper/iOS/AutoChessHelper/AutoChessHelper/Home/NPCViewController.m; sourceTree = "<absolute>"; };
+		211D21B922116BEC00E3CC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		211D21BB22116BF000E3CC71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		211D21BC22116C0E00E3CC71 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Info.plist"; sourceTree = "<group>"; };
+		211D21BD22116C0F00E3CC71 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hant"; path = "zh-Hant.lproj/Info.plist"; sourceTree = "<group>"; };
+		211D21BE22116C1000E3CC71 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/Info.plist; sourceTree = "<group>"; };
+		211D21C22211703900E3CC71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		211D21C42211704200E3CC71 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		211D21C52211704600E3CC71 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		211D21C62211704600E3CC71 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		212911E121F4DD7D0087128B /* MiniHero.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MiniHero.xcassets; sourceTree = "<group>"; };
 		212911E421F4DEB50087128B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		212911E721F4DEC20087128B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -99,6 +116,8 @@
 		21CDE9C22208247A004C255F /* CalcResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcResultViewController.m; sourceTree = "<group>"; };
 		21E4D6AD2210334800C60271 /* Item.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Item.xcassets; path = AutoChessHelper/Item.xcassets; sourceTree = SOURCE_ROOT; };
 		21E4D6AF2210633400C60271 /* cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cell.xib; sourceTree = "<group>"; };
+		21E4D6B22211351D00C60271 /* NPCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NPCViewController.h; path = /Users/cirno/Desktop/ChessHelper/iOS/AutoChessHelper/AutoChessHelper/Home/NPCViewController.h; sourceTree = "<absolute>"; };
+		21E4D6B422114AF200C60271 /* NPCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NPCViewController.m; path = /Users/cirno/Desktop/ChessHelper/iOS/AutoChessHelper/AutoChessHelper/Home/NPCViewController.m; sourceTree = "<absolute>"; };
 		21E6ACCB220623C9005994D7 /* ChessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChessController.h; sourceTree = "<group>"; };
 		21E6ACCC220623C9005994D7 /* ChessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChessController.m; sourceTree = "<group>"; };
 		21E6ACCF22062A2C005994D7 /* FilterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterController.h; sourceTree = "<group>"; };
@@ -109,7 +128,6 @@
 		21EC15D921F2DEC300591147 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		21EC15E421F2DEC400591147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21EC15E721F2DEC400591147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		21EC15E921F2DEC400591147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21EC15EA21F2DEC400591147 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21EDEDD921F4ABCC002FD31C /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
 		21EDEDDA21F4ABCC002FD31C /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
@@ -246,8 +264,9 @@
 				212911E121F4DD7D0087128B /* MiniHero.xcassets */,
 				21A6AB4721F6212C00FC5E9E /* FullHero.xcassets */,
 				21EC15E621F2DEC400591147 /* LaunchScreen.storyboard */,
-				21EC15E921F2DEC400591147 /* Info.plist */,
+				211D21BA22116BEC00E3CC71 /* Info.plist */,
 				21EC15EA21F2DEC400591147 /* main.m */,
+				211D21C32211703900E3CC71 /* InfoPlist.strings */,
 			);
 			path = AutoChessHelper;
 			sourceTree = "<group>";
@@ -255,6 +274,12 @@
 		21F1581421F450010050A2E1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				211D21AE22115A3700E3CC71 /* NPCViewController.h */,
+				211D21AF22115A3800E3CC71 /* NPCViewController.m */,
+				211D21AB2211570200E3CC71 /* NPCDetailViewController.h */,
+				211D21AC2211570200E3CC71 /* NPCDetailViewController.m */,
+				21E4D6B22211351D00C60271 /* NPCViewController.h */,
+				21E4D6B422114AF200C60271 /* NPCViewController.m */,
 				211B097622102EF20021BBBD /* ItemController.h */,
 				211B097722102EF20021BBBD /* ItemController.m */,
 				211B097322102E5A0021BBBD /* ItemDetailController.h */,
@@ -412,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21E4D6B02210633400C60271 /* cell.xib in Resources */,
+				211D21C12211703900E3CC71 /* InfoPlist.strings in Resources */,
 				21A6AB4621F61F3900FC5E9E /* Spell.xcassets in Resources */,
 				212911F021F4DFB90087128B /* Localizable.strings in Resources */,
 				21E4D6AE2210334800C60271 /* Item.xcassets in Resources */,
@@ -472,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21E6ACCD220623C9005994D7 /* ChessController.m in Sources */,
+				21E4D6B622114AF200C60271 /* NPCViewController.m in Sources */,
 				21EC15DA21F2DEC300591147 /* AppDelegate.m in Sources */,
 				211B097822102EF20021BBBD /* ItemController.m in Sources */,
 				21EC15EB21F2DEC400591147 /* main.m in Sources */,
@@ -486,10 +513,12 @@
 				21EDEDDB21F4ABCC002FD31C /* HomeCollectionViewCell.m in Sources */,
 				21CDE9C32208247A004C255F /* CalcResultViewController.m in Sources */,
 				21F1581721F450180050A2E1 /* HomeViewController.m in Sources */,
+				211D21B022115A3800E3CC71 /* NPCViewController.m in Sources */,
 				21CDE9BD22078D39004C255F /* BuffFilterController.m in Sources */,
 				21CDE9B7220742D1004C255F /* ChessDetailController.m in Sources */,
 				21F1582521F459D50050A2E1 /* SettingViewController.m in Sources */,
 				21EDEDDE21F4B0E0002FD31C /* HomeCollectionView.m in Sources */,
+				211D21AD2211570200E3CC71 /* NPCDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +533,29 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		211D21BA22116BEC00E3CC71 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				211D21B922116BEC00E3CC71 /* Base */,
+				211D21BB22116BF000E3CC71 /* en */,
+				211D21BC22116C0E00E3CC71 /* zh-Hans */,
+				211D21BD22116C0F00E3CC71 /* zh-Hant */,
+				211D21BE22116C1000E3CC71 /* ru */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		211D21C32211703900E3CC71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				211D21C22211703900E3CC71 /* en */,
+				211D21C42211704200E3CC71 /* zh-Hans */,
+				211D21C52211704600E3CC71 /* zh-Hant */,
+				211D21C62211704600E3CC71 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		212911E521F4DEB50087128B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -50,7 +50,7 @@
         NSString* imageName = [NSString stringWithFormat:@"level_%ld_png",(long)indexPath.row];
         cell.imageView.image = [UIImage imageNamed:imageName];
         cell.imageView.image = [cell.imageView.image  imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-        NSString* localizedString = [NSString stringWithFormat:@"text_player_level_%ld",indexPath.row];
+        NSString* localizedString = [NSString stringWithFormat:@"text_player_level_%ld",(long)indexPath.row];
         cell.textLabel.text = NSLocalizedString(localizedString, "");
         cell.imageView.tintColor = [UIColor grayColor];
     }

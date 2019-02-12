@@ -104,24 +104,24 @@
     if (self.detail){
         cell.detailTextLabel.numberOfLines = 0;
         DOTAManager * manager = [DOTAManager sharedInstance];
-//        NSString * detailTextString = [NSString stringWithFormat:@"DOTA_Tooltip_ability_%@_Lore",self.filterOptions[indexPath.row]];
-//        detailTextString = NSLocalizedString(detailTextString, "");
-//        detailTextString = [detailTextString stringByReplacingOccurrencesOfString:@"\n" withString:@"<br>"];
-//        cell.detailTextLabel.attributedText = [self attributedStringWithHTMLString:NSLocalizedString(detailTextString, "")];
-
-        NSString* propertiesStr = [NSString stringWithFormat:@"%@_buff",raw];
-       
-
-        NSMutableDictionary * dic = [manager abilityImageName][propertiesStr];
-        NSString* modifierStr = [NSString stringWithFormat:@"modifier_%@",propertiesStr];
-        @try {
-            dic = dic[@"Modifiers"][modifierStr][@"Properties"];
-
-           // propertiesValue = dic[propertiesStr];
-        } @catch (NSException *exception) {
-            DLog(@"%@",exception);
-        }
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",dic];
+        NSString * detailTextString = [NSString stringWithFormat:@"DOTA_Tooltip_ability_%@_Lore",self.filterOptions[indexPath.row]];
+        detailTextString = NSLocalizedString(detailTextString, "");
+        detailTextString = [detailTextString stringByReplacingOccurrencesOfString:@"\n" withString:@"<br>"];
+        cell.detailTextLabel.attributedText = [self attributedStringWithHTMLString:NSLocalizedString(detailTextString, "")];
+//
+//        NSString* propertiesStr = [NSString stringWithFormat:@"%@_buff",raw];
+//
+//
+//        NSMutableDictionary * dic = [manager abilityImageName][propertiesStr];
+//        NSString* modifierStr = [NSString stringWithFormat:@"modifier_%@",propertiesStr];
+//        @try {
+//            dic = dic[@"Modifiers"][modifierStr][@"Properties"];
+//
+//           // propertiesValue = dic[propertiesStr];
+//        } @catch (NSException *exception) {
+//            DLog(@"%@",exception);
+//        }
+ //       cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",dic];
     } else {
         cell.detailTextLabel.text = @"";
     }

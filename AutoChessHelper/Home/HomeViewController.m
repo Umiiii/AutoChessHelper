@@ -13,10 +13,50 @@
 @end
 
 @implementation HomeViewController
+- (void)setScreenShotIcon{
+    NSString* appnameStr = [[[NSBundle mainBundle] localizedInfoDictionary]
+                            objectForKey:@"CFBundleDisplayName"];
+    UIWindow *win = [UIApplication sharedApplication].keyWindow;
 
+    NSString *icon = @"AppIcon";
+    UIImage* image = [UIImage imageNamed:icon];
+
+    UILabel* appname =[[UILabel alloc]initWithFrame:CGRectMake(20, 0, SCREEN_WIDTH-20, 20)];
+    //appname.backgroundColor = [UIColor redColor];
+    appname.font = [UIFont systemFontOfSize:11.0f];
+    appname.textAlignment = NSTextAlignmentCenter;
+    DLog(@"%@",image);
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated"
+    CGSize titleSize = [appnameStr sizeWithFont:appname.font constrainedToSize:CGSizeMake(MAXFLOAT, 30)];
+#pragma clang diagnostic pop
+    //DLog(@"%@",titleSize);
+    UIImageView* i = [[UIImageView alloc]initWithFrame:CGRectMake((SCREEN_WIDTH-titleSize.width)/2-10, 3, 15, 15)];
+    i.layer.masksToBounds = YES;
+    i.image = image;
+    i.layer.cornerRadius = 2.0f;
+    i.layer.borderColor = [UIColor blackColor].CGColor;
+   
+
+
+
+
+
+    appname.textAlignment = NSTextAlignmentCenter;
+    appname.text = appnameStr;
+
+    [win addSubview:appname];
+    [win addSubview:i];}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // TableView
+    if (@available(iOS 11.0, *)) {
+        if(UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom > 0.0){
+            [self setScreenShotIcon];
+        }
+    } else {
+        // Fallback on earlier versions
+    }
+
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -89,7 +129,8 @@
         [self.navigationController pushViewController:rankCtr animated:YES];
     }
     if (indexPath.row == 2){
-
+        NPCViewController* ctr = [[NPCViewController alloc]init];
+        [self.navigationController pushViewController:ctr animated:YES];
     }
     if (indexPath.row == 3){
         ItemController* ctr = [[ItemController alloc]init];

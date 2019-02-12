@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ChessController : UITableViewController<UITableViewDelegate,UITableViewDataSource,FilterDelegate>
 
 @property (nonatomic, strong) NSArray<Chess*>* allChess;
+@property (nonatomic, strong) NSArray* ssr;
 @property (nonatomic, strong) NSArray<Chess*>* filterChess;
 @property (nonatomic, strong) NSArray* filterOptions;
 @property (nonatomic) FilterMode filterMode;
