@@ -23,11 +23,7 @@
     self.allChess = [[DOTAManager sharedInstance]allChessNotByMana];
     self.filterOptions = [[NSArray alloc]init];
     [self updateFilterChess];
-    NSArray* ssrName = [[DOTAManager sharedInstance]gamedata][@"chess_list_ssr"];
-    self.ssr = [[NSMutableArray alloc]init];
-    for (NSString* ssr in ssrName){
-        
-    }
+
 
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -178,8 +174,7 @@
 }
 
 -(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    if (section ==1)
-        return @"SSR";
+
     return nil;
 }
 
@@ -203,10 +198,11 @@
     [self.navigationController pushViewController:ctr animated:YES];
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     NSArray* color = [[NSArray alloc]initWithObjects:HRGB(0xBBBBBB),HRGB(0xBBBBFF),HRGB(0x6666FF),HRGB(0xFF00FF),
-    HRGB(0xFF8800),nil];
+    HRGB(0xFF8800),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),HRGB(0xADE55C),nil];
     if (indexPath.section == 1){
         NSMutableAttributedString * str = [
                                            [NSMutableAttributedString alloc]initWithString:[NSLocalizedString(self.ssr[indexPath.row], "") stringByReplacingOccurrencesOfString:@"" withString:@""]];

@@ -30,7 +30,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -38,6 +38,9 @@
     if (section == 0)
         return 3;
     else
+        if (section ==1)
+            return 1;
+
         return 6;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -120,7 +123,23 @@
             NSString * str = [NSString stringWithFormat:@"%@",NSLocalizedString(@"Item", "")];
             cell.textLabel.text = str;
         }
-    } else if (indexPath.section == 1){
+    } else  if (indexPath.section ==1 ){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        cell.detailTextLabel.numberOfLines = 0;
+        NSString* abilityLocalizedString = [[DOTAManager sharedInstance]gamedata][@"chess_ability_list"][self.chess.name];
+        NSString* abilityImageName = [[DOTAManager sharedInstance]abilityImageName][abilityLocalizedString][@"AbilityTextureName"];
+        abilityImageName = [NSString stringWithFormat:@"%@_png",abilityImageName];
+        DLog(@"%@ %@",abilityLocalizedString,abilityImageName);
+        NSString* abLo = [NSString stringWithFormat:@"DOTA_Tooltip_ability_%@",abilityLocalizedString];
+        NSString* abDeLo = [NSString stringWithFormat:@"DOTA_Tooltip_ability_%@_Description",abilityLocalizedString];
+        cell.imageView.image = [UIImage imageNamed:abilityImageName];
+        cell.textLabel.text = NSLocalizedString(abLo, "");
+        cell.detailTextLabel.text = NSLocalizedString(abDeLo, "");
+//        "DOTA_Tooltip_ability_lyc_wolf"="变身";
+//        "DOTA_Tooltip_ability_lyc_wolf_Description"="狼人展现出他的凶狼形态，获得生命值的加成，并且在身边的空格子召唤最多两只小狼为你作战。";
+//        "DOTA_Tooltip_ability_lyc_wolf_hp_per"="生命值加成百分比";
+//        "DOTA_Tooltip_ability_lyc_wolf_Lore"="贝恩霍勒接受了永恒的狼人诅咒，拥抱了他的野性，也永远成为了他狼性的奴仆。";
+    } else if (indexPath.section == 2){
 
 
         if (indexPath.row == 0){

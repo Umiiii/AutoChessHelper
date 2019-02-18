@@ -39,6 +39,11 @@
     return _chessName;
 }
 
+- (void)imageName:(NSString*)chessName{
+
+}
+
+
 - (NSArray<Chess*>*) allChessNotByMana{
     if (!_allChessNotByMana){
         NSMutableArray* tmpArr = [[NSMutableArray alloc]init];
@@ -74,6 +79,30 @@
                 [tmpArr addObject:chess];
             }
         }
+        NSArray* ssrName = [[DOTAManager sharedInstance]gamedata][@"chess_list_ssr"];
+        for (NSString* ssr in ssrName){
+            NSMutableDictionary* tmpDictionary = [[DOTAManager sharedInstance]units][ssr];
+            NSString* tmp = tmpDictionary[@"Model"];
+            NSUInteger pos1 = [tmp rangeOfString:@"/" options:NSBackwardsSearch].location+1;
+            NSUInteger pos2 = [tmp length]-5 ;
+            NSString* imageName = [NSString stringWithFormat:@"npc_dota_hero_%@_png",
+                                   [tmp substringWithRange:NSMakeRange(pos1, pos2-pos1)]];
+            NSMutableArray* ability = [[NSMutableArray alloc]init];
+            for (NSString* keys in [tmpDictionary allKeys]){
+
+                if ([keys hasPrefix:@"Ability"] ){
+                    NSString* str = tmpDictionary[keys];
+                    // if ([str length] != 0){
+                    if ([str hasPrefix:@"is_"]){
+                        [ability addObject:str];
+                    }
+                    //}
+                }
+            }
+            Chess* chess = [[Chess alloc]initWithName:ssr ability:ability imageName:imageName];
+            chess.mana = [[[DOTAManager sharedInstance]gamedata][@"chess_2_mana"][ssr]intValue];
+            [tmpArr addObject:chess];
+        }
         _allChessNotByMana = [tmpArr copy];
 
     }
@@ -88,11 +117,9 @@
 }
 
 -(NSMutableDictionary*)comboAbilityType{
-    if (!_comboAbilityType){
-        _comboAbilityType = _gamedata[@"combo_ability_type"];
-
-    }
-    return _comboAbilityType;
+//    DLog(@"%@",[self gamedata]);
+    return [self gamedata][@"combo_ability_type"];
+   // return _comboAbilityType;
 }
 
 
@@ -195,8 +222,10 @@
     return _modelName;
 }
 
--(NSDictionary*)gamedata{
+-(NSMutableDictionary*)gamedata{
+
     if (!_gamedata){
+  
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"gamedata" ofType:@"plist"];
         _gamedata = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
     }
@@ -237,7 +266,7 @@
 }
 
 -(NSArray*)checkBuff:(NSArray*)ch{
-    NSArray* buff;
+    NSMutableArray* buff = [[NSMutableArray alloc]init];
     NSMutableSet* ability = [[NSMutableSet alloc]init];
     NSMutableSet* chesses = [[NSMutableSet alloc]initWithArray:ch];
     NSMutableDictionary* comboCountTableSelf = [[NSMutableDictionary alloc]init];
@@ -258,7 +287,7 @@
             [ability addObject:[self comboAbilityType][str][@"ability"]];
         }
     }
-    return buff;
+    return [buff copy];
 }
 
 - (NSMutableDictionary*)units{

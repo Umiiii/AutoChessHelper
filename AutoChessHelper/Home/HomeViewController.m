@@ -14,6 +14,7 @@
 
 @implementation HomeViewController
 - (void)setScreenShotIcon{
+
     NSString* appnameStr = [[[NSBundle mainBundle] localizedInfoDictionary]
                             objectForKey:@"CFBundleDisplayName"];
     UIWindow *win = [UIApplication sharedApplication].keyWindow;

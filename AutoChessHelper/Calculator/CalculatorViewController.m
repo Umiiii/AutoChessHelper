@@ -42,6 +42,7 @@
 }
 
 - (void)clickOnChess:(UIButton*)button{
+
     if ([self.selectedChess count] == 18){
         return ;
     }
@@ -49,9 +50,10 @@
     [arr addObject:self.hero[button.tag/100][button.tag%100]];
     self.selectedChess = [arr copy];
     if ([self.selectedChess count] == 7 || [self.selectedChess count] == 13)
-        [self updateSelectedView:YES];
+        [self updateSelectedView:NO];
     else
         [self updateSelectedView:NO];
+    [self calcCombo];
 
 }
 
@@ -72,6 +74,7 @@
 //        self.selectedArray = [self addObject:button forArray:self.selectedArray];
 //    }
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
+   // [self calcCombo];
     if (animated)
 
     [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
@@ -79,14 +82,34 @@
         [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationNone];
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if (section !=0) return nil;
+
+    UIView* view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 30)];
+    UIButton *clear = [[UIButton alloc]initWithFrame:CGRectMake(10, 0, 60, 30)];
+
+    if ([self.selectedChess count] == 0) return view;
+    [view addSubview:clear];
+    [clear setTitleColor:self.view.tintColor forState:UIControlStateNormal];
+    clear.titleLabel.font = [UIFont systemFontOfSize:[UIFont smallSystemFontSize]];
+    [clear setTitle:NSLocalizedString(@"Clear", "") forState:UIControlStateNormal];
+    [clear addTarget:self action:@selector(clearAllSelectedChess) forControlEvents:UIControlEventTouchUpInside];
+    return view;
+}
+-(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 44;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.result = [[NSMutableArray alloc]init];
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.gameInfoView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
+
 
 
     /** 初始化可选择棋子 **/
@@ -99,7 +122,7 @@
     self.selectedChess = [[NSMutableArray alloc]init];
     self.selectedArray = [[NSMutableArray alloc]init];
     self.level = 1;
-    self.round = 1;
+    self.nowResult = 1;
     [self updateSelectedView:YES];
     [self.view addSubview:self.tableView];
 }
@@ -124,6 +147,12 @@
 -(void)test{
     DLog(@"test");
 }
+
+- (void)clearAllSelectedChess{
+    self.selectedChess = [[NSArray alloc]init];
+    [self updateSelectedView:YES];
+}
+
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
 
     UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
@@ -244,7 +273,68 @@
             }
         }
     } else if (indexPath.section == 2){
+        if (indexPath.row == 0){
+            cell.textLabel.text = [NSString stringWithFormat:@"Level %d",(int)self.level];
+            if (!self.stepper){
+            self.stepper = [[UIStepper alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-100, 6, 0, 0)];
+            self.stepper.minimumValue = 1;
+            self.stepper.maximumValue = 10;
+            }
+            self.stepper.value = self.level;
+            [cell addSubview:self.stepper];
 
+            [_stepper addTarget:self action:@selector(stepperClick) forControlEvents:UIControlEventTouchUpInside];
+        } else {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+            UIView* imageView = [[UIView alloc]initWithFrame:CGRectMake(15, 7.5, SCREEN_WIDTH-10, 32)];
+            for (int i=0;i<[self.result[indexPath.row-1] count];i++){
+                CGFloat offset = (SCREEN_WIDTH-320) / 10;
+                UIImageView* image = [[UIImageView alloc]initWithFrame:CGRectMake(i*32+i*offset, 0, 32, 32)];
+                image.image = [UIImage imageNamed:self.result[indexPath.row-1][i].imageName];
+                [imageView addSubview:image];
+            }
+            NSString* finalStr ;
+            for (int i=0;i<[self.finalComboResult[indexPath.row-1] count];i++){
+                NSString* localizedStr = [NSString stringWithFormat:@"%@",self.finalComboResult[indexPath.row-1][i]];
+                NSString * desc = [NSString stringWithFormat:@"DOTA_Tooltip_modifier_%@_buff_Description",localizedStr];
+                localizedStr = [NSString stringWithFormat:@"DOTA_Tooltip_modifier_%@_buff",localizedStr];
+                if ([localizedStr hasSuffix:@"11_buff"]){
+                    localizedStr = [NSString stringWithFormat:@"%@_buff_plus_plus",[localizedStr stringByReplacingOccurrencesOfString:@"11_buff" withString:@""]];
+                    desc = [NSString stringWithFormat:@"%@_buff_plus_plus_Description",
+                    [desc stringByReplacingOccurrencesOfString:@"11_buff_Description" withString:@""]]
+                    ;
+
+                }
+                if ([localizedStr hasSuffix:@"1_buff"]){
+                    localizedStr = [NSString stringWithFormat:@"%@_buff_plus",[localizedStr stringByReplacingOccurrencesOfString:@"1_buff" withString:@""]];
+                    desc = [NSString stringWithFormat:@"%@_buff_plus_Description",
+                            [desc stringByReplacingOccurrencesOfString:@"1_buff_Description" withString:@""]]
+                    ;
+                }
+                if ([localizedStr hasSuffix:@"druid_buff"]){
+                    localizedStr = @"DOTA_Tooltip_ability_is_druid";
+                    desc = @"";
+                }
+                DLog(@"%@",localizedStr);
+                NSString* lstr = NSLocalizedString(desc, "");
+                lstr = [lstr stringByReplacingOccurrencesOfString:@"%%" withString:@"%"];
+                lstr = [NSString stringWithFormat:@"%@:%@",NSLocalizedString(localizedStr, ""),lstr];
+                if (finalStr == NULL)
+                    finalStr = lstr ;
+                else
+                    finalStr = [NSString stringWithFormat:@"%@\n%@",finalStr,lstr];
+            }
+
+
+            [cell addSubview:imageView];
+           // [cell.textLabel addSubview:imageView];
+            UILabel* detail = [[UILabel alloc]initWithFrame:CGRectMake(15, 32, SCREEN_WIDTH, 25+[self.finalComboResult[indexPath.row-1] count]*15)];
+            detail.font = [UIFont systemFontOfSize:[UIFont smallSystemFontSize]];
+            detail.text = finalStr;
+            [cell addSubview:detail];
+            detail.numberOfLines = 0;
+            //cell.detailTextLabel.text = finalStr;
+        }
     }
 
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -253,57 +343,110 @@
 
 }
 
+-(NSArray*)calcAbilityCombo:(NSMutableArray<Chess*>*) chess{
+   //return [[DOTAManager sharedInstance]checkBuff:[chess copy] ];
+    NSMutableDictionary* combo = [[DOTAManager sharedInstance]comboAbilityType];
+    NSMutableArray* comboFinal = [[NSMutableArray alloc]init];
+    NSMutableDictionary* tmpChess = [[NSMutableDictionary alloc]init];// 棋子种族计数
+    for (Chess* c in chess){
+        for (NSString* ability in c.ability){
+            if ([tmpChess valueForKey:ability]){
+                NSNumber* count = [tmpChess objectForKey:ability];
+                count = [NSNumber numberWithInt:[count intValue]+1];
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    if (section == 2){
-        UIView* view = [[UIView alloc]initWithFrame:CGRectMake(20, 0, SCREEN_WIDTH-20, 100)];
-        [view addSubview:self.gameInfoView];
-        return view;
+                [tmpChess setValue:count forKey:ability];
+            } else {
+                [tmpChess setValue:[NSNumber numberWithInt:1] forKey:ability];
+            }
+        }
     }
-    return nil;
+    for (NSString* c in combo){
+     //   for (NSString* k in [combo[c] allKeys]){
+        NSMutableDictionary* dic = combo[c];
+        NSString* k = c;
+        NSString* oriStr = [k stringByReplacingOccurrencesOfString:@"1" withString:@""];
+        NSNumber* count = [tmpChess valueForKey:oriStr];
+        int condition = [dic[@"condition"]intValue];
+        if (count!=NULL){
+                DLog(@"%@, %@",oriStr,count);
+                int cou = [count intValue];
+                if (cou >= condition){
+                    [comboFinal addObject:c];
+                }
+
+     //       }
+        }
+    }
+    DLog(@"Combo = %@",comboFinal);
+    return [comboFinal copy];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    if (section == 2){
 
-        return 44;
+- (void)calcCombo{
+
+#define FLAG_1      1
+#define FLAG_0      0
+#define POS_NULL    -1
+
+    NSMutableArray* combination = [[NSMutableArray alloc]init];
+    NSMutableSet* set1 = [[NSMutableSet alloc]initWithArray:self.selectedChess ];
+    NSMutableArray* finalArray = [[set1 allObjects] mutableCopy];
+    DLog(@"FinalArray = %@",finalArray);
+
+
+    [CombinationLogic Select:(int)[finalArray count]
+                           m:(int)self.level
+                    allChess:finalArray
+                       vvOut:combination];
+    self.result = combination;
+    //DLog(@"%lu %@",(unsigned long)(int)[combination count],combination);
+
+    self.finalResult = [[NSMutableArray alloc]init];
+    self.finalComboResult = [[NSMutableArray alloc]init];
+    DLog(@"Combination = %@",self.result);
+    for (int i=0;i<[self.result count];i++){
+        NSArray* combo = [self calcAbilityCombo:self.result[i]];
+        DLog(@"Combo = %@",combo);
+        if ([combo count] != 0) // 如果没有能组合的技能就不要
+        {
+            [self.finalResult addObject:self.result[i]];
+            [self.finalComboResult addObject:combo];
+        }
     }
-    return 0;
+    self.result = self.finalResult;
+    DLog(@"%@",self.result);
+    NSInteger resultCount = [self.result count]+1;
+    NSIndexSet* set = [NSIndexSet indexSetWithIndex:2];
+    self.nowResult = resultCount;
+    [self.tableView reloadSections:set withRowAnimation:UITableViewRowAnimationNone];
+    DLog(@"%@",[self calcAbilityCombo:finalArray]);
+
+
 }
+
+
 - (void) stepperClick{
     self.level = (NSInteger)_stepper.value;
     NSIndexPath *indexPath=[NSIndexPath indexPathForRow:0 inSection:2];
    // [self updateOnBoardView];
     [_tableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationNone];
-
+    [self calcCombo];
 }
 
 
-- (void) roundStepperClick{
-    DLog(@"click");
-    self.round = (NSInteger)_roundStepper.value;
-    NSIndexPath *indexPath=[NSIndexPath indexPathForRow:1 inSection:2];
-    NSIndexPath *indexPath2=[NSIndexPath indexPathForRow:2 inSection:2];
-    if (self.round == 1 || self.round == 2 || self.round == 3 || self.round == 10 || self.round == 15 || self.round == 20 ||
-        self.round == 25 || self.round == 30 || self.round == 35 || self.round == 40 || self.round == 45 || self.round == 50){
-        if ([self.tableView cellForRowAtIndexPath:indexPath2] == nil)
-        [self.tableView insertRowsAtIndexPaths:@[indexPath2 ] withRowAnimation:UITableViewRowAnimationFade];
-    } else {
-        if ([self.tableView cellForRowAtIndexPath:indexPath2] != nil)
-        [self.tableView deleteRowsAtIndexPaths:@[indexPath2] withRowAnimation:UITableViewRowAnimationFade];
-    }
-    [_tableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationNone];
-}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 1 && indexPath.row == 0){
         return 28;
     }
     if (indexPath.section == 0 || indexPath.section == 1)
         return 44;
-    if (indexPath.section == 2 && indexPath.row == 2)
-        return 72;
+    if (indexPath.section == 2 && indexPath.row != 0){
 
-    return 44;
+       return 44 + 10+[self.finalComboResult[indexPath.row-1] count] * 15;
+    }
+
+    return UITableViewAutomaticDimension;
 }
 - (void)filterClick{
     self.filter_selected = self.chessControl.selectedSegmentIndex;
@@ -315,7 +458,7 @@
     if (section == 0){
         return NSLocalizedString(@"Selected", "棋盘上的棋子");
     } else if (section == 2) {
-        return NSLocalizedString(@"Game info", "棋手信息");
+        return NSLocalizedString(@"Result", "棋手信息");
     } else if (section == 1) {
         return NSLocalizedString(@"Choose Chess", "");
     }
@@ -332,12 +475,8 @@
         return ceil((double)[self.selectedChess count] / 6) ;
     }
     if (section == 2){
-        if (self.round == 1 || self.round == 2 || self.round == 3)
-            return 3;
-        if (self.round >= 10)
-            if (self.round % 5 == 0)
-                return 3;
-        return 2;
+
+        return self.nowResult;
     }
     if (section == 1){
         NSInteger heroCount = ceil((double)[self.hero[self.filter_selected] count]/5)+1;

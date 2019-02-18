@@ -14,7 +14,6 @@
 		211B097522102E5A0021BBBD /* ItemDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B097422102E5A0021BBBD /* ItemDetailController.m */; };
 		211B097822102EF20021BBBD /* ItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B097722102EF20021BBBD /* ItemController.m */; };
 		211D21AD2211570200E3CC71 /* NPCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211D21AC2211570200E3CC71 /* NPCDetailViewController.m */; };
-		211D21B022115A3800E3CC71 /* NPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211D21AF22115A3800E3CC71 /* NPCViewController.m */; };
 		211D21C12211703900E3CC71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 211D21C32211703900E3CC71 /* InfoPlist.strings */; };
 		212911E221F4DD7D0087128B /* MiniHero.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212911E121F4DD7D0087128B /* MiniHero.xcassets */; };
 		212911E321F4DEB50087128B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212911E521F4DEB50087128B /* Main.storyboard */; };
@@ -38,6 +37,8 @@
 		21E4D6B622114AF200C60271 /* NPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E4D6B422114AF200C60271 /* NPCViewController.m */; };
 		21E6ACCD220623C9005994D7 /* ChessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6ACCC220623C9005994D7 /* ChessController.m */; };
 		21E6ACD122062A2C005994D7 /* FilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6ACD022062A2C005994D7 /* FilterController.m */; };
+		21EB86312213E29600E8F5A0 /* Combination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21EB86302213E29600E8F5A0 /* Combination.cpp */; };
+		21EB86342213E48200E8F5A0 /* CombinationLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB86332213E48200E8F5A0 /* CombinationLogic.m */; };
 		21EC15DA21F2DEC300591147 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EC15D921F2DEC300591147 /* AppDelegate.m */; };
 		21EC15E521F2DEC400591147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EC15E421F2DEC400591147 /* Assets.xcassets */; };
 		21EC15E821F2DEC400591147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EC15E621F2DEC400591147 /* LaunchScreen.storyboard */; };
@@ -123,6 +124,10 @@
 		21E6ACCF22062A2C005994D7 /* FilterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterController.h; sourceTree = "<group>"; };
 		21E6ACD022062A2C005994D7 /* FilterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterController.m; sourceTree = "<group>"; };
 		21E6ACD22206F7DD005994D7 /* FilterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterDelegate.h; sourceTree = "<group>"; };
+		21EB862F2213E29600E8F5A0 /* Combination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Combination.h; sourceTree = "<group>"; };
+		21EB86302213E29600E8F5A0 /* Combination.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Combination.cpp; sourceTree = "<group>"; };
+		21EB86322213E48200E8F5A0 /* CombinationLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombinationLogic.h; sourceTree = "<group>"; };
+		21EB86332213E48200E8F5A0 /* CombinationLogic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombinationLogic.m; sourceTree = "<group>"; };
 		21EC15D521F2DEC300591147 /* AutoChessHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoChessHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EC15D821F2DEC300591147 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21EC15D921F2DEC300591147 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -302,6 +307,10 @@
 			children = (
 				21F1581921F450890050A2E1 /* CalculatorViewController.h */,
 				21F1581A21F450890050A2E1 /* CalculatorViewController.m */,
+				21EB862F2213E29600E8F5A0 /* Combination.h */,
+				21EB86302213E29600E8F5A0 /* Combination.cpp */,
+				21EB86322213E48200E8F5A0 /* CombinationLogic.h */,
+				21EB86332213E48200E8F5A0 /* CombinationLogic.m */,
 				21CDE9C12208247A004C255F /* CalcResultViewController.h */,
 				21CDE9C22208247A004C255F /* CalcResultViewController.m */,
 			);
@@ -510,12 +519,13 @@
 				211B097522102E5A0021BBBD /* ItemDetailController.m in Sources */,
 				215A01E821FDF5FE0085C678 /* DOTAManager.m in Sources */,
 				21E6ACD122062A2C005994D7 /* FilterController.m in Sources */,
+				21EB86312213E29600E8F5A0 /* Combination.cpp in Sources */,
 				21EDEDDB21F4ABCC002FD31C /* HomeCollectionViewCell.m in Sources */,
 				21CDE9C32208247A004C255F /* CalcResultViewController.m in Sources */,
 				21F1581721F450180050A2E1 /* HomeViewController.m in Sources */,
-				211D21B022115A3800E3CC71 /* NPCViewController.m in Sources */,
 				21CDE9BD22078D39004C255F /* BuffFilterController.m in Sources */,
 				21CDE9B7220742D1004C255F /* ChessDetailController.m in Sources */,
+				21EB86342213E48200E8F5A0 /* CombinationLogic.m in Sources */,
 				21F1582521F459D50050A2E1 /* SettingViewController.m in Sources */,
 				21EDEDDE21F4B0E0002FD31C /* HomeCollectionView.m in Sources */,
 				211D21AD2211570200E3CC71 /* NPCDetailViewController.m in Sources */,

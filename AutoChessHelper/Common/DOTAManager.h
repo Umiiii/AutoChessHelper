@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)sharedInstance;
 - (void)putAttribute:(NSString*)key value:(id)value;
 - (id)getAttribute:(NSString*)key;
+-(NSArray*)checkBuff:(NSArray*)ch;
 @property (nonatomic, strong) NSMutableDictionary *attrDict;
 @property (nonatomic, strong) NSArray* chessName;
 @property (nonatomic, strong) NSArray *attribute;
