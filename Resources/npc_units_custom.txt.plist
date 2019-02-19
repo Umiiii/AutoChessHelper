@@ -851,7 +851,7 @@
 			<key>Level</key>
 			<string>1</string>
 			<key>MagicalResistance</key>
-			<string>20</string>
+			<string>10</string>
 			<key>MinimapIcon</key>
 			<string>minimap_creep</string>
 			<key>MinimapIconSize</key>
@@ -995,7 +995,7 @@
 			<key>Level</key>
 			<string>3</string>
 			<key>MagicalResistance</key>
-			<string>40</string>
+			<string>20</string>
 			<key>MinimapIcon</key>
 			<string>minimap_creep</string>
 			<key>MinimapIconSize</key>
@@ -1139,7 +1139,7 @@
 			<key>Level</key>
 			<string>4</string>
 			<key>MagicalResistance</key>
-			<string>60</string>
+			<string>30</string>
 			<key>MinimapIcon</key>
 			<string>minimap_creep</string>
 			<key>MinimapIconSize</key>
@@ -3251,7 +3251,7 @@
 			<key>Ability2</key>
 			<string>is_knight</string>
 			<key>Ability3</key>
-			<string>e401</string>
+			<string>e214</string>
 			<key>Ability4</key>
 			<string></string>
 			<key>Ability5</key>
@@ -3324,7 +3324,7 @@
 			<key>HealthBarOffset</key>
 			<string>150</string>
 			<key>Level</key>
-			<string>6</string>
+			<string>15</string>
 			<key>MagicalResistance</key>
 			<string>0</string>
 			<key>MinimapIcon</key>
@@ -3355,6 +3355,144 @@
 			<string>0</string>
 			<key>StatusMana</key>
 			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_chaos_knight.vsndevts</string>
+		</dict>
+		<key>chess_ck_ssr_illusion</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_demon</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_knight</string>
+			<key>Ability3</key>
+			<string>e214</string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>440</string>
+			<key>AttackDamageMin</key>
+			<string>160</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.3</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7789</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7790</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7791</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7792</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7793</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_chaos_knight.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>15</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/chaos_knight/chaos_knight.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.8</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_ChaosKnight</string>
+			<key>StatusHealth</key>
+			<string>3000</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>0</string>
 			<key>StatusManaRegen</key>
 			<string>0</string>
 			<key>TeamName</key>
@@ -4765,7 +4903,7 @@
 			<key>StatusHealth</key>
 			<string>800</string>
 			<key>StatusHealthRegen</key>
-			<string>5</string>
+			<string>0</string>
 			<key>StatusMana</key>
 			<string>100</string>
 			<key>StatusManaRegen</key>
@@ -4913,7 +5051,7 @@
 			<key>StatusHealth</key>
 			<string>1600</string>
 			<key>StatusHealthRegen</key>
-			<string>5</string>
+			<string>0</string>
 			<key>StatusMana</key>
 			<string>100</string>
 			<key>StatusManaRegen</key>
@@ -5061,7 +5199,7 @@
 			<key>StatusHealth</key>
 			<string>3200</string>
 			<key>StatusHealthRegen</key>
-			<string>5</string>
+			<string>0</string>
 			<key>StatusMana</key>
 			<string>100</string>
 			<key>StatusManaRegen</key>
@@ -5562,9 +5700,9 @@
 			<key>AttackCapabilities</key>
 			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
 			<key>AttackDamageMax</key>
-			<string>45</string>
+			<string>50</string>
 			<key>AttackDamageMin</key>
-			<string>40</string>
+			<string>45</string>
 			<key>AttackRange</key>
 			<string>600</string>
 			<key>AttackRate</key>
@@ -5710,9 +5848,9 @@
 			<key>AttackCapabilities</key>
 			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
 			<key>AttackDamageMax</key>
-			<string>90</string>
+			<string>100</string>
 			<key>AttackDamageMin</key>
-			<string>80</string>
+			<string>90</string>
 			<key>AttackRange</key>
 			<string>600</string>
 			<key>AttackRate</key>
@@ -5858,9 +5996,9 @@
 			<key>AttackCapabilities</key>
 			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
 			<key>AttackDamageMax</key>
-			<string>180</string>
+			<string>200</string>
 			<key>AttackDamageMin</key>
-			<string>160</string>
+			<string>180</string>
 			<key>AttackRange</key>
 			<string>600</string>
 			<key>AttackRate</key>
@@ -6176,12 +6314,12 @@
 					<key>Wearable3</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>4785</string>
+						<string>12689</string>
 					</dict>
 					<key>Wearable4</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>4786</string>
+						<string>12687</string>
 					</dict>
 					<key>Wearable5</key>
 					<dict>
@@ -6304,12 +6442,12 @@
 					<key>Wearable1</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5744</string>
+						<string>12688</string>
 					</dict>
 					<key>Wearable2</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5746</string>
+						<string>12686</string>
 					</dict>
 					<key>Wearable3</key>
 					<dict>
@@ -6324,7 +6462,7 @@
 					<key>Wearable5</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5747</string>
+						<string>12690</string>
 					</dict>
 				</dict>
 			</dict>
@@ -6361,7 +6499,7 @@
 			<key>SoundSet</key>
 			<string>Hero_Enchantress</string>
 			<key>StatusHealth</key>
-			<string>1600</string>
+			<string>1500</string>
 			<key>StatusHealthRegen</key>
 			<string>0</string>
 			<key>StatusMana</key>
@@ -6631,6 +6769,144 @@
 			<string>soundevents/voscripts/game_sounds_vo_enigma.vsndevts</string>
 		</dict>
 		<key>chess_enigma11</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_element</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warlock</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.4</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>220</string>
+			<key>AttackDamageMin</key>
+			<string>180</string>
+			<key>AttackRange</key>
+			<string>400</string>
+			<key>AttackRate</key>
+			<string>1.5</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9290</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9289</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>8326</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9288</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>498</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>9</string>
+			<key>MagicalResistance</key>
+			<string>40</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/enigma/enigma.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.85</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_enigma/enigma_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Enigma</string>
+			<key>StatusHealth</key>
+			<string>4000</string>
+			<key>StatusHealthRegen</key>
+			<string>5</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_enigma.vsndevts</string>
+		</dict>
+		<key>chess_enigma_ssr</key>
 		<dict>
 			<key>Ability1</key>
 			<string>is_element</string>
@@ -7173,7 +7449,7 @@
 			<key>Model</key>
 			<string>models/heroes/furion/furion.vmdl</string>
 			<key>ModelScale</key>
-			<string>0.9</string>
+			<string>0.85</string>
 			<key>MovementCapabilities</key>
 			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
 			<key>MovementSpeed</key>
@@ -7189,7 +7465,7 @@
 			<key>SoundSet</key>
 			<string>Hero_Furion</string>
 			<key>StatusHealth</key>
-			<string>2000</string>
+			<string>1900</string>
 			<key>StatusHealthRegen</key>
 			<string>0</string>
 			<key>StatusMana</key>
@@ -7206,6 +7482,435 @@
 			<string>600</string>
 			<key>VoiceFile</key>
 			<string>soundevents/voscripts/game_sounds_vo_furion.vsndevts</string>
+		</dict>
+		<key>chess_fv</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_nraqi</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>10</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>60</string>
+			<key>AttackDamageMin</key>
+			<string>50</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.2</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>63</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>64</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>65</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>66</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>67</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>68</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>4</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/dragon_knight/dragon_knight.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.65</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>3000</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_DragonKnight</string>
+			<key>StatusHealth</key>
+			<string>800</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts</string>
+		</dict>
+		<key>chess_fv1</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_nraqi</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>10</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>60</string>
+			<key>AttackDamageMin</key>
+			<string>50</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.2</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>63</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>64</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>65</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>66</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>67</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>68</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>4</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/dragon_knight/dragon_knight.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.65</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>3000</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_DragonKnight</string>
+			<key>StatusHealth</key>
+			<string>800</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts</string>
+		</dict>
+		<key>chess_fv11</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_nraqi</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>10</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>60</string>
+			<key>AttackDamageMin</key>
+			<string>50</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.2</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>63</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>64</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>65</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>66</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>67</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>68</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>4</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/dragon_knight/dragon_knight.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.65</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>3000</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_DragonKnight</string>
+			<key>StatusHealth</key>
+			<string>800</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts</string>
 		</dict>
 		<key>chess_ga</key>
 		<dict>
@@ -8172,7 +8877,7 @@
 			<key>AttackRange</key>
 			<string>205</string>
 			<key>AttackRate</key>
-			<string>0.9</string>
+			<string>1.1</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>CombatClassAttack</key>
@@ -8311,7 +9016,7 @@
 			<key>AttackRange</key>
 			<string>205</string>
 			<key>AttackRate</key>
-			<string>0.9</string>
+			<string>1.1</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>CombatClassAttack</key>
@@ -8450,7 +9155,7 @@
 			<key>AttackRange</key>
 			<string>205</string>
 			<key>AttackRate</key>
-			<string>0.9</string>
+			<string>1.1</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>CombatClassAttack</key>
@@ -8541,6 +9246,544 @@
 			<string>600</string>
 			<key>VoiceFile</key>
 			<string>soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts</string>
+		</dict>
+		<key>chess_jugg_ssr</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_orc</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.330000</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>280</string>
+			<key>AttackDamageMin</key>
+			<string>260</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.1</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9059</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>12296</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>4884</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>8982</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>8985</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>560</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>6</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/juggernaut/juggernaut_arcana.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.95</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Juggernaut</string>
+			<key>StatusHealth</key>
+			<string>2400</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts</string>
+		</dict>
+		<key>chess_kael</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_elf</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_mage</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>80</string>
+			<key>AttackDamageMin</key>
+			<string>70</string>
+			<key>AttackRange</key>
+			<string>600</string>
+			<key>AttackRate</key>
+			<string>1.1</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>387</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>486</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>488</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>509</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>3</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/shadow_fiend/shadow_fiend.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.6</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Nevermore</string>
+			<key>StatusHealth</key>
+			<string>450</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_nevermore.vsndevts</string>
+		</dict>
+		<key>chess_kael1</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_elf</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_mage</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>80</string>
+			<key>AttackDamageMin</key>
+			<string>70</string>
+			<key>AttackRange</key>
+			<string>600</string>
+			<key>AttackRate</key>
+			<string>1.1</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>387</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>486</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>488</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>509</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>3</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/shadow_fiend/shadow_fiend.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.6</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Nevermore</string>
+			<key>StatusHealth</key>
+			<string>450</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_nevermore.vsndevts</string>
+		</dict>
+		<key>chess_kael11</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_elf</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_mage</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>80</string>
+			<key>AttackDamageMin</key>
+			<string>70</string>
+			<key>AttackRange</key>
+			<string>600</string>
+			<key>AttackRate</key>
+			<string>1.1</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>387</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>486</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>488</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>509</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>3</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/shadow_fiend/shadow_fiend.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.6</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Nevermore</string>
+			<key>StatusHealth</key>
+			<string>450</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_nevermore.vsndevts</string>
 		</dict>
 		<key>chess_kunkka</key>
 		<dict>
@@ -8758,7 +10001,7 @@
 					<key>Wearable3</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5334</string>
+						<string>5427</string>
 					</dict>
 					<key>Wearable4</key>
 					<dict>
@@ -8932,11 +10175,6 @@
 					<dict>
 						<key>ItemDef</key>
 						<string>9115</string>
-					</dict>
-					<key>Wearable8</key>
-					<dict>
-						<key>ItemDef</key>
-						<string>5427</string>
 					</dict>
 				</dict>
 			</dict>
@@ -9417,7 +10655,7 @@
 			<key>SoundSet</key>
 			<string>Hero_LoneDruid</string>
 			<key>StatusHealth</key>
-			<string>3200</string>
+			<string>3000</string>
 			<key>StatusHealthRegen</key>
 			<string>0</string>
 			<key>StatusMana</key>
@@ -11749,32 +12987,37 @@
 					<key>Wearable1</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5005</string>
+						<string>8191</string>
 					</dict>
 					<key>Wearable2</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5007</string>
+						<string>8195</string>
 					</dict>
 					<key>Wearable3</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5006</string>
+						<string>8193</string>
 					</dict>
 					<key>Wearable4</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5004</string>
+						<string>8194</string>
 					</dict>
 					<key>Wearable5</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5008</string>
+						<string>8196</string>
 					</dict>
 					<key>Wearable6</key>
 					<dict>
 						<key>ItemDef</key>
 						<string>531</string>
+					</dict>
+					<key>Wearable7</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7911</string>
 					</dict>
 				</dict>
 			</dict>
@@ -11892,32 +13135,32 @@
 					<key>Wearable1</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>8191</string>
+						<string>12626</string>
 					</dict>
 					<key>Wearable2</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>8195</string>
+						<string>531</string>
 					</dict>
 					<key>Wearable3</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>7911</string>
+						<string>12625</string>
 					</dict>
 					<key>Wearable4</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>8194</string>
+						<string>12624</string>
 					</dict>
 					<key>Wearable5</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>8196</string>
+						<string>12623</string>
 					</dict>
 					<key>Wearable6</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>531</string>
+						<string>12622</string>
 					</dict>
 				</dict>
 			</dict>
@@ -11971,6 +13214,445 @@
 			<string>600</string>
 			<key>VoiceFile</key>
 			<string>soundevents/voscripts/game_sounds_vo_medusa.vsndevts</string>
+		</dict>
+		<key>chess_morph</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_element</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_assassin</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>60</string>
+			<key>AttackDamageMin</key>
+			<string>45</string>
+			<key>AttackRange</key>
+			<string>400</string>
+			<key>AttackRate</key>
+			<string>1.3</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>507</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>573</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>574</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>575</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>576</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>577</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>2</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/morphling/morphling.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.6</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_morphling/morphling_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Morphling</string>
+			<key>StatusHealth</key>
+			<string>500</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_morphling.vsndevts</string>
+		</dict>
+		<key>chess_morph1</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_element</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_assassin</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>120</string>
+			<key>AttackDamageMin</key>
+			<string>90</string>
+			<key>AttackRange</key>
+			<string>400</string>
+			<key>AttackRate</key>
+			<string>1.3</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>507</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7560</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7561</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7559</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7562</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7558</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>4</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/morphling/morphling.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.75</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_morphling/morphling_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Morphling</string>
+			<key>StatusHealth</key>
+			<string>1000</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_morphling.vsndevts</string>
+		</dict>
+		<key>chess_morph11</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_element</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_assassin</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.5</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>240</string>
+			<key>AttackDamageMin</key>
+			<string>180</string>
+			<key>AttackRange</key>
+			<string>400</string>
+			<key>AttackRate</key>
+			<string>1.3</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>507</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7603</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>6833</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>573</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>574</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>575</string>
+					</dict>
+					<key>Wearable7</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>576</string>
+					</dict>
+					<key>Wearable8</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>577</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>6</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/morphling/morphling.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.9</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_morphling/morphling_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Morphling</string>
+			<key>StatusHealth</key>
+			<string>2000</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_morphling.vsndevts</string>
 		</dict>
 		<key>chess_nec</key>
 		<dict>
@@ -13150,7 +14832,7 @@
 					<key>Wearable1</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>5241</string>
+						<string>4360</string>
 					</dict>
 					<key>Wearable2</key>
 					<dict>
@@ -13289,7 +14971,7 @@
 					<key>Wearable1</key>
 					<dict>
 						<key>ItemDef</key>
-						<string>4360</string>
+						<string>12318</string>
 					</dict>
 					<key>Wearable2</key>
 					<dict>
@@ -13400,7 +15082,7 @@
 			<key>Ability9</key>
 			<string></string>
 			<key>ArmorPhysical</key>
-			<string>0</string>
+			<string>5</string>
 			<key>AttackAnimationPoint</key>
 			<string>0.30000</string>
 			<key>AttackCapabilities</key>
@@ -13489,7 +15171,7 @@
 			<key>StatusHealthRegen</key>
 			<string>0</string>
 			<key>StatusMana</key>
-			<string>100</string>
+			<string>0</string>
 			<key>StatusManaRegen</key>
 			<string>0</string>
 			<key>TeamName</key>
@@ -13538,7 +15220,7 @@
 			<key>Ability9</key>
 			<string></string>
 			<key>ArmorPhysical</key>
-			<string>0</string>
+			<string>5</string>
 			<key>AttackAnimationPoint</key>
 			<string>0.30000</string>
 			<key>AttackCapabilities</key>
@@ -13627,7 +15309,7 @@
 			<key>StatusHealthRegen</key>
 			<string>0</string>
 			<key>StatusMana</key>
-			<string>100</string>
+			<string>0</string>
 			<key>StatusManaRegen</key>
 			<string>0</string>
 			<key>TeamName</key>
@@ -13676,7 +15358,7 @@
 			<key>Ability9</key>
 			<string></string>
 			<key>ArmorPhysical</key>
-			<string>0</string>
+			<string>5</string>
 			<key>AttackAnimationPoint</key>
 			<string>0.30000</string>
 			<key>AttackCapabilities</key>
@@ -13765,7 +15447,7 @@
 			<key>StatusHealthRegen</key>
 			<string>0</string>
 			<key>StatusMana</key>
-			<string>100</string>
+			<string>0</string>
 			<key>StatusManaRegen</key>
 			<string>0</string>
 			<key>TeamName</key>
@@ -15450,7 +17132,7 @@
 			<key>Ability9</key>
 			<string></string>
 			<key>ArmorPhysical</key>
-			<string>10</string>
+			<string>6</string>
 			<key>AttackAnimationPoint</key>
 			<string>0.360000</string>
 			<key>AttackCapabilities</key>
@@ -15594,7 +17276,7 @@
 			<key>Ability9</key>
 			<string></string>
 			<key>ArmorPhysical</key>
-			<string>10</string>
+			<string>8</string>
 			<key>AttackAnimationPoint</key>
 			<string>0.360000</string>
 			<key>AttackCapabilities</key>
@@ -16244,6 +17926,144 @@
 			<string>Hero_SandKing</string>
 			<key>StatusHealth</key>
 			<string>2200</string>
+			<key>StatusHealthRegen</key>
+			<string>5</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_sandking.vsndevts</string>
+		</dict>
+		<key>chess_sk_ssr</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_beast</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_assassin</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>10</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.53</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>60</string>
+			<key>AttackDamageMin</key>
+			<string>45</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.4</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>180</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>198</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>199</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>200</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>201</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>3</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/sand_king/sand_king.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.55</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_SandKing</string>
+			<key>StatusHealth</key>
+			<string>550</string>
 			<key>StatusHealthRegen</key>
 			<string>5</string>
 			<key>StatusMana</key>
@@ -17957,6 +19777,480 @@
 			<key>VoiceFile</key>
 			<string>soundevents/voscripts/game_sounds_vo_shadowshaman.vsndevts</string>
 		</dict>
+		<key>chess_sven</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_demon</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.35</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>70</string>
+			<key>AttackDamageMin</key>
+			<string>50</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>117</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>118</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>119</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>120</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>121</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>122</string>
+					</dict>
+					<key>Wearable7</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>123</string>
+					</dict>
+					<key>Wearable8</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>124</string>
+					</dict>
+					<key>Wearable9</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>125</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>4</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/alchemist/alchemist.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.65</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Alchemist</string>
+			<key>StatusHealth</key>
+			<string>1000</string>
+			<key>StatusHealthRegen</key>
+			<string>1</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_alchemist.vsndevts</string>
+		</dict>
+		<key>chess_sven1</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_demon</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.35</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>70</string>
+			<key>AttackDamageMin</key>
+			<string>50</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>117</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>118</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>119</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>120</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>121</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>122</string>
+					</dict>
+					<key>Wearable7</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>123</string>
+					</dict>
+					<key>Wearable8</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>124</string>
+					</dict>
+					<key>Wearable9</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>125</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>4</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/alchemist/alchemist.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.65</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Alchemist</string>
+			<key>StatusHealth</key>
+			<string>1000</string>
+			<key>StatusHealthRegen</key>
+			<string>1</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_alchemist.vsndevts</string>
+		</dict>
+		<key>chess_sven11</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_demon</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.35</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>70</string>
+			<key>AttackDamageMin</key>
+			<string>50</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>117</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>118</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>119</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>120</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>121</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>122</string>
+					</dict>
+					<key>Wearable7</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>123</string>
+					</dict>
+					<key>Wearable8</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>124</string>
+					</dict>
+					<key>Wearable9</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>125</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>4</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/alchemist/alchemist.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.65</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Alchemist</string>
+			<key>StatusHealth</key>
+			<string>1000</string>
+			<key>StatusHealthRegen</key>
+			<string>1</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_alchemist.vsndevts</string>
+		</dict>
 		<key>chess_ta</key>
 		<dict>
 			<key>Ability1</key>
@@ -18004,7 +20298,7 @@
 			<key>AttackRange</key>
 			<string>400</string>
 			<key>AttackRate</key>
-			<string>1</string>
+			<string>1.2</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>CombatClassAttack</key>
@@ -18142,7 +20436,7 @@
 			<key>AttackRange</key>
 			<string>400</string>
 			<key>AttackRate</key>
-			<string>1</string>
+			<string>1.2</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>CombatClassAttack</key>
@@ -18280,7 +20574,7 @@
 			<key>AttackRange</key>
 			<string>400</string>
 			<key>AttackRate</key>
-			<string>1</string>
+			<string>1.2</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>CombatClassAttack</key>
@@ -18370,6 +20664,430 @@
 			<string>600</string>
 			<key>VoiceFile</key>
 			<string>soundevents/voscripts/game_sounds_vo_templar_assassin.vsndevts</string>
+		</dict>
+		<key>chess_tb</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_demon</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_demonhunter</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.3</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>65</string>
+			<key>AttackDamageMin</key>
+			<string>55</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.4</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>306</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>307</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>476</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>478</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>540</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>3</string>
+			<key>MagicalResistance</key>
+			<string>10</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/terrorblade/terrorblade.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.65</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Terrorblade</string>
+			<key>StatusHealth</key>
+			<string>650</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts</string>
+		</dict>
+		<key>chess_tb1</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_demon</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_demonhunter</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.3</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>130</string>
+			<key>AttackDamageMin</key>
+			<string>110</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.4</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9499</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9500</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9497</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9498</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>540</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9501</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>5</string>
+			<key>MagicalResistance</key>
+			<string>20</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/terrorblade/terrorblade.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.8</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Terrorblade</string>
+			<key>StatusHealth</key>
+			<string>1300</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts</string>
+		</dict>
+		<key>chess_tb11</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_demon</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_demonhunter</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.3</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_RANGED_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>260</string>
+			<key>AttackDamageMin</key>
+			<string>220</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.4</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>9750</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>8179</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>8178</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>5957</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>540</string>
+					</dict>
+					<key>Wearable6</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>8276</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>7</string>
+			<key>MagicalResistance</key>
+			<string>30</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/terrorblade/terrorblade.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.95</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Terrorblade</string>
+			<key>StatusHealth</key>
+			<string>2600</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts</string>
 		</dict>
 		<key>chess_tech</key>
 		<dict>
@@ -19244,6 +21962,438 @@
 			<key>VoiceFile</key>
 			<string>soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts</string>
 		</dict>
+		<key>chess_tiny</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_element</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.400000</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>100</string>
+			<key>AttackDamageMin</key>
+			<string>60</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.9</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>493</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>494</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>495</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>496</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>516</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>1</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/tiny_01/tiny_01.vmdl</string>
+			<key>Model1</key>
+			<string>models/heroes/tiny_02/tiny_02.vmdl</string>
+			<key>Model2</key>
+			<string>models/heroes/tiny_03/tiny_03.vmdl</string>
+			<key>Model3</key>
+			<string>models/heroes/tiny_04/tiny_04.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.85</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Tiny</string>
+			<key>StatusHealth</key>
+			<string>650</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_tiny.vsndevts</string>
+		</dict>
+		<key>chess_tiny1</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_element</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.400000</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>200</string>
+			<key>AttackDamageMin</key>
+			<string>120</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.9</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>516</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>6999</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7000</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>6998</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>6886</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>3</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/tiny_02/tiny_02.vmdl</string>
+			<key>Model1</key>
+			<string>models/heroes/tiny_02/tiny_02.vmdl</string>
+			<key>Model2</key>
+			<string>models/heroes/tiny_03/tiny_03.vmdl</string>
+			<key>Model3</key>
+			<string>models/heroes/tiny_04/tiny_04.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.95</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Tiny</string>
+			<key>StatusHealth</key>
+			<string>1300</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_tiny.vsndevts</string>
+		</dict>
+		<key>chess_tiny11</key>
+		<dict>
+			<key>Ability1</key>
+			<string>is_element</string>
+			<key>Ability10</key>
+			<string></string>
+			<key>Ability11</key>
+			<string></string>
+			<key>Ability12</key>
+			<string></string>
+			<key>Ability13</key>
+			<string></string>
+			<key>Ability14</key>
+			<string></string>
+			<key>Ability15</key>
+			<string>no_collision</string>
+			<key>Ability16</key>
+			<string>dac_guai_base</string>
+			<key>Ability2</key>
+			<string>is_warrior</string>
+			<key>Ability3</key>
+			<string></string>
+			<key>Ability4</key>
+			<string></string>
+			<key>Ability5</key>
+			<string></string>
+			<key>Ability6</key>
+			<string></string>
+			<key>Ability7</key>
+			<string></string>
+			<key>Ability8</key>
+			<string></string>
+			<key>Ability9</key>
+			<string></string>
+			<key>ArmorPhysical</key>
+			<string>5</string>
+			<key>AttackAnimationPoint</key>
+			<string>0.400000</string>
+			<key>AttackCapabilities</key>
+			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
+			<key>AttackDamageMax</key>
+			<string>400</string>
+			<key>AttackDamageMin</key>
+			<string>240</string>
+			<key>AttackRange</key>
+			<string>205</string>
+			<key>AttackRate</key>
+			<string>1.9</string>
+			<key>BaseClass</key>
+			<string>npc_dota_creature</string>
+			<key>CombatClassAttack</key>
+			<string>DOTA_COMBAT_CLASS_ATTACK_BASIC</string>
+			<key>CombatClassDefend</key>
+			<string>DOTA_COMBAT_CLASS_DEFEND_BASIC</string>
+			<key>ConsideredHero</key>
+			<string>1</string>
+			<key>Creature</key>
+			<dict>
+				<key>AttachWearables</key>
+				<dict>
+					<key>Wearable1</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>516</string>
+					</dict>
+					<key>Wearable2</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7267</string>
+					</dict>
+					<key>Wearable3</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7274</string>
+					</dict>
+					<key>Wearable4</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7268</string>
+					</dict>
+					<key>Wearable5</key>
+					<dict>
+						<key>ItemDef</key>
+						<string>7267</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>GameSoundsFile</key>
+			<string>soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts</string>
+			<key>HasInventory</key>
+			<string>1</string>
+			<key>HealthBarOffset</key>
+			<string>150</string>
+			<key>Level</key>
+			<string>5</string>
+			<key>MagicalResistance</key>
+			<string>0</string>
+			<key>MinimapIcon</key>
+			<string>minimap_creep</string>
+			<key>MinimapIconSize</key>
+			<string>256</string>
+			<key>Model</key>
+			<string>models/heroes/tiny_04/tiny_04.vmdl</string>
+			<key>Model1</key>
+			<string>models/heroes/tiny_02/tiny_02.vmdl</string>
+			<key>Model2</key>
+			<string>models/heroes/tiny_03/tiny_03.vmdl</string>
+			<key>Model3</key>
+			<string>models/heroes/tiny_04/tiny_04.vmdl</string>
+			<key>ModelScale</key>
+			<string>0.8</string>
+			<key>MovementCapabilities</key>
+			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
+			<key>MovementSpeed</key>
+			<string>300</string>
+			<key>MovementTurnRate</key>
+			<string>10</string>
+			<key>ProjectileModel</key>
+			<string>particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf</string>
+			<key>ProjectileSpeed</key>
+			<string>800</string>
+			<key>RingRadius</key>
+			<string>60</string>
+			<key>SoundSet</key>
+			<string>Hero_Tiny</string>
+			<key>StatusHealth</key>
+			<string>2600</string>
+			<key>StatusHealthRegen</key>
+			<string>0</string>
+			<key>StatusMana</key>
+			<string>100</string>
+			<key>StatusManaRegen</key>
+			<string>0</string>
+			<key>TeamName</key>
+			<string>DOTA_TEAM_GOODGUYS</string>
+			<key>UnitRelationshipClass</key>
+			<string>DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING</string>
+			<key>VisionDaytimeRange</key>
+			<string>900</string>
+			<key>VisionNighttimeRange</key>
+			<string>600</string>
+			<key>VoiceFile</key>
+			<string>soundevents/voscripts/game_sounds_vo_tiny.vsndevts</string>
+		</dict>
 		<key>chess_tk</key>
 		<dict>
 			<key>Ability1</key>
@@ -20048,7 +23198,7 @@
 			<key>Model</key>
 			<string>models/heroes/treant_protector/treant_protector.vmdl</string>
 			<key>ModelScale</key>
-			<string>0.8</string>
+			<string>0.75</string>
 			<key>MovementCapabilities</key>
 			<string>DOTA_UNIT_CAP_MOVE_GROUND</string>
 			<key>MovementSpeed</key>
@@ -20064,7 +23214,7 @@
 			<key>SoundSet</key>
 			<string>Hero_Treant</string>
 			<key>StatusHealth</key>
-			<string>2600</string>
+			<string>2300</string>
 			<key>StatusHealthRegen</key>
 			<string>0</string>
 			<key>StatusMana</key>
@@ -20117,7 +23267,7 @@
 			<key>Ability9</key>
 			<string></string>
 			<key>ArmorPhysical</key>
-			<string>10</string>
+			<string>5</string>
 			<key>AttackAnimationPoint</key>
 			<string>0.3</string>
 			<key>AttackCapabilities</key>
@@ -20255,7 +23405,7 @@
 			<key>Ability9</key>
 			<string></string>
 			<key>ArmorPhysical</key>
-			<string>10</string>
+			<string>5</string>
 			<key>AttackAnimationPoint</key>
 			<string>0.3</string>
 			<key>AttackCapabilities</key>
@@ -20388,7 +23538,7 @@
 			<key>Ability9</key>
 			<string></string>
 			<key>ArmorPhysical</key>
-			<string>10</string>
+			<string>5</string>
 			<key>AttackAnimationPoint</key>
 			<string>0.3</string>
 			<key>AttackCapabilities</key>
@@ -21795,7 +24945,7 @@
 			<key>AttackRange</key>
 			<string>400</string>
 			<key>AttackRate</key>
-			<string>1.5</string>
+			<string>1.4</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>CombatClassAttack</key>
@@ -21933,7 +25083,7 @@
 			<key>AttackRange</key>
 			<string>400</string>
 			<key>AttackRate</key>
-			<string>1.5</string>
+			<string>1.4</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>CombatClassAttack</key>
@@ -22076,7 +25226,7 @@
 			<key>AttackRange</key>
 			<string>400</string>
 			<key>AttackRate</key>
-			<string>1.5</string>
+			<string>1.4</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>CombatClassAttack</key>
@@ -28704,7 +31854,7 @@
 			<key>AttackCapabilities</key>
 			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
 			<key>AttackDamageMax</key>
-			<string>300</string>
+			<string>250</string>
 			<key>AttackDamageMin</key>
 			<string>200</string>
 			<key>AttackRange</key>
@@ -28797,7 +31947,7 @@
 			<key>AttackCapabilities</key>
 			<string>DOTA_UNIT_CAP_MELEE_ATTACK</string>
 			<key>AttackDamageMax</key>
-			<string>300</string>
+			<string>250</string>
 			<key>AttackDamageMin</key>
 			<string>200</string>
 			<key>AttackRange</key>
@@ -30121,7 +33271,7 @@
 			<key>AttackRangeBuffer</key>
 			<string>50</string>
 			<key>AttackRate</key>
-			<string>0.7</string>
+			<string>0.5</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>BountyGoldMax</key>
@@ -30218,7 +33368,7 @@
 			<key>AttackRangeBuffer</key>
 			<string>50</string>
 			<key>AttackRate</key>
-			<string>0.7</string>
+			<string>0.5</string>
 			<key>BaseClass</key>
 			<string>npc_dota_creature</string>
 			<key>BountyGoldMax</key>
@@ -31343,7 +34493,7 @@
 			<key>AttackRangeBuffer</key>
 			<string>50</string>
 			<key>AttackRate</key>
-			<string>1.5</string>
+			<string>1.4</string>
 			<key>AutoAttacksByDefault</key>
 			<string>0</string>
 			<key>BaseClass</key>
@@ -31444,7 +34594,7 @@
 			<key>AttackRangeBuffer</key>
 			<string>50</string>
 			<key>AttackRate</key>
-			<string>1.5</string>
+			<string>1.4</string>
 			<key>AutoAttacksByDefault</key>
 			<string>0</string>
 			<key>BaseClass</key>
@@ -31545,7 +34695,7 @@
 			<key>AttackRangeBuffer</key>
 			<string>50</string>
 			<key>AttackRate</key>
-			<string>1.5</string>
+			<string>1.4</string>
 			<key>AutoAttacksByDefault</key>
 			<string>0</string>
 			<key>BaseClass</key>

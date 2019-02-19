@@ -3,25 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[CalculatorViewController loadPlist]:CalculatorViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "tmp[34]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[ItemDetailController viewDidLoad]:ItemDetailController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.itemName">
-            </PersistentString>
-            <PersistentString
-               value = "self.image">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "-[CalculatorViewController calcAbilityCombo:]:CalculatorViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -30,26 +11,65 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[NPCViewController tableView:cellForRowAtIndexPath:]:NPCViewController.m">
+         contextName = "-[CalculatorViewController calcCombo]:CalculatorViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.npc">
+               value = "self.finalResult">
+            </PersistentString>
+            <PersistentString
+               value = "self.finalComboResult">
+            </PersistentString>
+            <PersistentString
+               value = "combo[0]">
+            </PersistentString>
+            <PersistentString
+               value = "self.selectedChess">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[NPCViewController viewDidLoad]:NPCViewController.m">
+         contextName = "-[ChessDetailController tableView:cellForRowAtIndexPath:]:ChessDetailController.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.round">
+               value = "dic[index]">
             </PersistentString>
             <PersistentString
-               value = "self.npc">
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "dic[index][title]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[DOTAManager allChess]:DOTAManager.m">
+         contextName = "-[ChessController updateFilterChess]:ChessController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.filterOptions">
+            </PersistentString>
+            <PersistentString
+               value = "array[l]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CalculatorViewController loadPlist]:CalculatorViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "tmp[34]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FilterController tableView:cellForRowAtIndexPath:]:FilterController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[dic allKeys]">
+            </PersistentString>
+            <PersistentString
+               value = "dic[@&quot;Modifiers&quot;]">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "-[CalculatorViewController tableView:cellForRowAtIndexPath:]:CalculatorViewController.m">
@@ -75,13 +95,57 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[FilterController tableView:cellForRowAtIndexPath:]:FilterController.m">
+         contextName = "-[DOTAManager getChessName]:DOTAManager.m">
          <PersistentStrings>
             <PersistentString
-               value = "[dic allKeys]">
+               value = "unitDictionary[@&quot;Level&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ItemDetailController viewDidLoad]:ItemDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.itemName">
             </PersistentString>
             <PersistentString
-               value = "dic[@&quot;Modifiers&quot;]">
+               value = "self.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CalculatorViewController viewDidLoad]:CalculatorViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.row">
+            </PersistentString>
+            <PersistentString
+               value = "0x600001ad00c0">
+            </PersistentString>
+            <PersistentString
+               value = "imageView.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DOTAManager chessName]:DOTAManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[NPCViewController tableView:cellForRowAtIndexPath:]:NPCViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.npc">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CombinationLogic GetSelectedItems:flagCnt:allChess:vvCombin:]:CombinationLogic.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ChessDetailController viewDidLoad]:ChessDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.chess.imageName">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -112,21 +176,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[DOTAManager chessName]:DOTAManager.m">
-      </ContextState>
-      <ContextState
-         contextName = "-[DOTAManager getChessName]:DOTAManager.m">
+         contextName = "-[NPCViewController viewDidLoad]:NPCViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "unitDictionary[@&quot;Level&quot;]">
+               value = "self.round">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[ChessDetailController tableView:cellForRowAtIndexPath:]:ChessDetailController.m">
-         <PersistentStrings>
             <PersistentString
-               value = "indexPath.row">
+               value = "self.npc">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -142,29 +198,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[CalculatorViewController viewDidLoad]:CalculatorViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.row">
-            </PersistentString>
-            <PersistentString
-               value = "0x600001ad00c0">
-            </PersistentString>
-            <PersistentString
-               value = "imageView.image">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[ChessController updateFilterChess]:ChessController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.filterOptions">
-            </PersistentString>
-            <PersistentString
-               value = "array[l]">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "-[DOTAManager allChess]:DOTAManager.m">
       </ContextState>
       <ContextState
          contextName = "-[CalculatorViewController tableView:numberOfRowsInSection:]:CalculatorViewController.m">
@@ -176,26 +210,6 @@
                value = "self.nowResult">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[CalculatorViewController calcCombo]:CalculatorViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.finalResult">
-            </PersistentString>
-            <PersistentString
-               value = "self.finalComboResult">
-            </PersistentString>
-            <PersistentString
-               value = "combo[0]">
-            </PersistentString>
-            <PersistentString
-               value = "self.selectedChess">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[CombinationLogic GetSelectedItems:flagCnt:allChess:vvCombin:]:CombinationLogic.m">
       </ContextState>
       <ContextState
          contextName = "-[ItemController checkRecipe:]:ItemController.m">

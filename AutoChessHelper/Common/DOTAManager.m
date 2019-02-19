@@ -101,6 +101,7 @@
             }
             Chess* chess = [[Chess alloc]initWithName:ssr ability:ability imageName:imageName];
             chess.mana = [[[DOTAManager sharedInstance]gamedata][@"chess_2_mana"][ssr]intValue];
+            chess.chessDictionary = [[DOTAManager sharedInstance]units][ssr];
             [tmpArr addObject:chess];
         }
         _allChessNotByMana = [tmpArr copy];
@@ -194,7 +195,7 @@
     for (NSString *unitName in [_units allKeys]){
         if ([unitName hasPrefix:@"chess"] &&
             ![unitName hasSuffix:@"1"]    &&
-            ![unitName hasSuffix:@"ssr"])
+            ![unitName containsString:@"ssr"])
         {
             NSMutableDictionary* unitDictionary = _units[unitName];
             int level = [unitDictionary[@"Level"]intValue];

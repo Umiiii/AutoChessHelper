@@ -38,8 +38,10 @@
     if (section == 0)
         return 3;
     else
-        if (section ==1)
-            return 1;
+        if (section ==1){
+            NSString* abilityLocalizedString = [[DOTAManager sharedInstance]gamedata][@"chess_ability_list"][self.chess.name];
+            return 1+[[[DOTAManager sharedInstance]abilityImageName][abilityLocalizedString][@"AbilitySpecial"] count];
+        }
 
         return 6;
 }
@@ -103,16 +105,20 @@
             
             NSString* detail = [NSString stringWithFormat:@"%@:-%ld, %@:+%@",NSLocalizedString(@"Cost", ""),self.chess.mana,
                                 NSLocalizedString(@"DOTA_Tooltip_ability_remove_chess", ""),[manager units][str][@"Level"]];
+            NSInteger cost = 0;
+            cost = self.level*self.chess.mana*3;
             if (self.level!=1)
-                detail = [NSString stringWithFormat:@"%@:-%ld, %@:+%@",NSLocalizedString(@"Cost", ""),self.chess.mana*self.level*3,
+                detail = [NSString stringWithFormat:@"%@:-%ld, %@:+%@",NSLocalizedString(@"Cost", ""),cost,
                                     NSLocalizedString(@"DOTA_Tooltip_ability_remove_chess", ""),[manager units][str][@"Level"]];
             cell.detailTextLabel.text =detail;
+            if (![self.chess.name containsString:@"ssr"]){
             UIStepper * stepper = [[UIStepper alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
             cell.accessoryView = stepper;
             stepper.value = self.level;
             stepper.minimumValue = 1;
             stepper.maximumValue = 3;
             [stepper addTarget:self action:@selector(stepperClick:) forControlEvents:UIControlEventTouchUpInside];
+            }
 
         } else if (indexPath.row == 1) {
             NSString* str = [NSString stringWithFormat:@"%@",@"Buff"];
@@ -124,12 +130,16 @@
             cell.textLabel.text = str;
         }
     } else  if (indexPath.section ==1 ){
+        if (indexPath.row == 0){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
         cell.detailTextLabel.numberOfLines = 0;
         NSString* abilityLocalizedString = [[DOTAManager sharedInstance]gamedata][@"chess_ability_list"][self.chess.name];
         NSString* abilityImageName = [[DOTAManager sharedInstance]abilityImageName][abilityLocalizedString][@"AbilityTextureName"];
-        abilityImageName = [NSString stringWithFormat:@"%@_png",abilityImageName];
-        DLog(@"%@ %@",abilityLocalizedString,abilityImageName);
+        if (abilityImageName ==NULL)
+            abilityImageName = [NSString stringWithFormat:@"%@_png",abilityLocalizedString];
+        else
+            abilityImageName = [NSString stringWithFormat:@"%@_png",abilityImageName];
+      
         NSString* abLo = [NSString stringWithFormat:@"DOTA_Tooltip_ability_%@",abilityLocalizedString];
         NSString* abDeLo = [NSString stringWithFormat:@"DOTA_Tooltip_ability_%@_Description",abilityLocalizedString];
         cell.imageView.image = [UIImage imageNamed:abilityImageName];
@@ -139,6 +149,25 @@
 //        "DOTA_Tooltip_ability_lyc_wolf_Description"="狼人展现出他的凶狼形态，获得生命值的加成，并且在身边的空格子召唤最多两只小狼为你作战。";
 //        "DOTA_Tooltip_ability_lyc_wolf_hp_per"="生命值加成百分比";
 //        "DOTA_Tooltip_ability_lyc_wolf_Lore"="贝恩霍勒接受了永恒的狼人诅咒，拥抱了他的野性，也永远成为了他狼性的奴仆。";
+
+        } else {
+            NSString* abilityLocalizedString = [[DOTAManager sharedInstance]gamedata][@"chess_ability_list"][self.chess.name];
+            NSMutableDictionary* dic = [[DOTAManager sharedInstance]abilityImageName][abilityLocalizedString][@"AbilitySpecial"];
+       //     cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+            NSString* title;
+            NSString* data;
+            NSString* index = [NSString stringWithFormat:@"0%ld",indexPath.row];
+            for (NSString*key in dic[index]){
+                if (![key isEqualToString:@"var_type"] && ![key isEqualToString:@"LinkedSpecialBonus"]){
+                    title = key;
+                    data = dic[index][title];
+                    break;
+                }
+            }
+            cell.textLabel.text = NSLocalizedString(title, "");
+            cell.detailTextLabel.text = data;
+
+        }
     } else if (indexPath.section == 2){
 
 
@@ -167,11 +196,35 @@
 
             DOTAManager* manager = [DOTAManager sharedInstance];
             NSString* str = [manager attribute][indexPath.row-2];
+            //NSMutableDictionary* final = [[NSMutableDictionary alloc]init];
+            int finalValue = [self.chess.chessDictionary[str] intValue] ;
+            BOOL buff = NO;
+            if (finalValue != [self.chess.chessDictionary[str] intValue])
+                buff = YES;
+            // Calc buff
+            // ...
+            // Calc buff
 
+
+           //[[NSArray alloc]initWithObjects:@"MagicalResistance",@"ArmorPhysical",@"AttackRange",@"AttackRate",@"ProjectileSpeed",@"Level",nil];
+            NSString* detailText = self.chess.chessDictionary[str];
+            if ([str isEqualToString:@"ArmorPhysical"]){
+
+                float reduceDamage = (0.052*finalValue/(0.9+0.048*finalValue));
+                detailText = [NSString stringWithFormat:@"%d (-%.2f%%)",finalValue,reduceDamage*100];
+            }
+            if ([str isEqualToString:@"MagicalResistance"]){
+
+              //  float reduceDamage = (0.052*finalValue/(0.9+0.048*finalValue));
+                detailText = [NSString stringWithFormat:@"%d (-%d%%)",finalValue,finalValue];
+            }
             NSString* localizedStr = [NSString stringWithFormat:@"%@_Name",str];
-            cell.textLabel.text = NSLocalizedString(localizedStr, "");
+            if (buff)
+            cell.textLabel.text = [NSString stringWithFormat:@"%@(buff)",NSLocalizedString(localizedStr, "")];
+            else
+                cell.textLabel.text = NSLocalizedString(localizedStr, "");
 
-            cell.detailTextLabel.text = self.chess.chessDictionary[str] ;
+            cell.detailTextLabel.text = detailText ;
         }
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;

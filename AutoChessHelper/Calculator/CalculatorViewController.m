@@ -121,7 +121,7 @@
     self.row = ceil((double)[self.hero[0] count] /5 )+1;
     self.selectedChess = [[NSMutableArray alloc]init];
     self.selectedArray = [[NSMutableArray alloc]init];
-    self.level = 1;
+    self.level = 4;
     self.nowResult = 1;
     [self updateSelectedView:YES];
     [self.view addSubview:self.tableView];
@@ -136,8 +136,38 @@
     //返回剪裁后的图片
     return newImage;
 }
-
+#define UIKitLocalizedString(key) [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] localizedStringForKey:key value:@"" table:nil]
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSInteger oldLevel = self.level;
+    NSBundle* uikitBundle = [NSBundle bundleForClass:[UIButton class]];
+  //  NSString *cancel = [uikitBundle localizedStringForKey:@"Cancel" value:nil table:nil];
+    if (indexPath.section == 2 && indexPath.row == 0){
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:@"Level" preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+
+            textField.placeholder = @"New Level";
+            textField.keyboardType = UIKeyboardTypeNumberPad;
+        }];
+
+        [alertController addAction:[UIAlertAction actionWithTitle:[uikitBundle localizedStringForKey:@"Cancel" value:nil table:nil] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        }]];
+
+
+
+        [alertController addAction:[UIAlertAction actionWithTitle:[uikitBundle localizedStringForKey:@"Done" value:nil table:nil] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UITextField *textField = alertController.textFields.firstObject;
+            NSInteger newLevel = [textField.text integerValue];
+            if (newLevel < 1 && newLevel > 10){
+                newLevel = oldLevel;
+            } else {
+                self.level = newLevel;
+                [self calcCombo];
+            }
+        }]];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+
 
 //    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
 //    cell.selectedBackgroundView = [[UIView alloc]initWithFrame:cell.bounds];
@@ -274,21 +304,24 @@
         }
     } else if (indexPath.section == 2){
         if (indexPath.row == 0){
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = [NSString stringWithFormat:@"Level %d",(int)self.level];
-            if (!self.stepper){
-            self.stepper = [[UIStepper alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-100, 6, 0, 0)];
-            self.stepper.minimumValue = 1;
-            self.stepper.maximumValue = 10;
-            }
-            self.stepper.value = self.level;
-            [cell addSubview:self.stepper];
-
-            [_stepper addTarget:self action:@selector(stepperClick) forControlEvents:UIControlEventTouchUpInside];
+            return cell;
+//            if (!self.stepper){
+//            self.stepper = [[UIStepper alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-100, 6, 0, 0)];
+//            self.stepper.minimumValue = 1;
+//            self.stepper.maximumValue = 10;
+//            }
+//            self.stepper.value = self.level;
+//            [cell addSubview:self.stepper];
+//
+//            [_stepper addTarget:self action:@selector(stepperClick) forControlEvents:UIControlEventTouchUpInside];
         } else {
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
-            UIView* imageView = [[UIView alloc]initWithFrame:CGRectMake(15, 7.5, SCREEN_WIDTH-10, 32)];
+            UIView* imageView = [[UIView alloc]initWithFrame:CGRectMake(15, 7.5, SCREEN_WIDTH-15, 32)];
             for (int i=0;i<[self.result[indexPath.row-1] count];i++){
-                CGFloat offset = (SCREEN_WIDTH-320) / 10;
+                CGFloat offset = (SCREEN_WIDTH-350) / 10;
+                if (offset <0) offset = 0;
                 UIImageView* image = [[UIImageView alloc]initWithFrame:CGRectMake(i*32+i*offset, 0, 32, 32)];
                 image.image = [UIImage imageNamed:self.result[indexPath.row-1][i].imageName];
                 [imageView addSubview:image];
@@ -432,7 +465,6 @@
     [_tableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationNone];
     [self calcCombo];
 }
-
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

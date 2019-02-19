@@ -3168,6 +3168,59 @@
 				</dict>
 			</dict>
 		</dict>
+		<key>item_tiaodao</key>
+		<dict>
+			<key>AbilityBehavior</key>
+			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
+			<key>AbilityCooldown</key>
+			<string>15</string>
+			<key>AbilityTextureName</key>
+			<string>item_blink</string>
+			<key>AbilityUnitTargetTeam</key>
+			<string>DOTA_UNIT_TARGET_TEAM_FRIENDLY</string>
+			<key>AbilityUnitTargetType</key>
+			<string>DOTA_UNIT_TARGET_BASIC</string>
+			<key>BaseClass</key>
+			<string>item_datadriven</string>
+			<key>ID</key>
+			<string>1547</string>
+			<key>ItemAlertable</key>
+			<string>1</string>
+			<key>ItemCost</key>
+			<string>999</string>
+			<key>ItemDisassembleRule</key>
+			<string>DOTA_ITEM_DISASSEMBLE_NEVER</string>
+			<key>ItemDroppable</key>
+			<string>1</string>
+			<key>ItemPermanent</key>
+			<string>1</string>
+			<key>ItemPurchasable</key>
+			<string>1</string>
+			<key>ItemQuality</key>
+			<string>rare</string>
+			<key>ItemRequirements</key>
+			<string></string>
+			<key>ItemRequiresCharges</key>
+			<string>0</string>
+			<key>ItemSellable</key>
+			<string>0</string>
+			<key>ItemShareability</key>
+			<string>ITEM_FULLY_SHAREABLE</string>
+			<key>ItemStackable</key>
+			<string>0</string>
+			<key>Model</key>
+			<string>models/props_winter/present.vmdl</string>
+			<key>Modifiers</key>
+			<dict>
+				<key>modifier_item_tiaodao</key>
+				<dict>
+					<key>IsHidden</key>
+					<string>1</string>
+					<key>Passive</key>
+					<string>1</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>item_tiaozhantoujin</key>
 		<dict>
 			<key>AbilityBehavior</key>
@@ -3579,6 +3632,8 @@
 		<dict>
 			<key>AbilityBehavior</key>
 			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
+			<key>AbilityCooldown</key>
+			<string>30</string>
 			<key>AbilityTextureName</key>
 			<string>item_sheepstick</string>
 			<key>AbilityUnitTargetTeam</key>

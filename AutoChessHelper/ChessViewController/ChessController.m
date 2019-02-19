@@ -208,7 +208,7 @@
                                            [NSMutableAttributedString alloc]initWithString:[NSLocalizedString(self.ssr[indexPath.row], "") stringByReplacingOccurrencesOfString:@"" withString:@""]];
         cell.textLabel.attributedText = str;
         NSMutableDictionary*tmpDictionary = [[DOTAManager sharedInstance]units][self.ssr[indexPath.row]];
-
+        
         NSString* tmp = tmpDictionary[@"Model"];
         NSUInteger pos1 = [tmp rangeOfString:@"/" options:NSBackwardsSearch].location+1;
         NSUInteger pos2 = [tmp length]-5 ;
