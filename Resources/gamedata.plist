@@ -712,6 +712,12 @@
 		<string>doom_bringer_doom</string>
 		<key>chess_doom11</key>
 		<string>doom_bringer_doom</string>
+		<key>chess_dp</key>
+		<string>death_prophet_exorcism</string>
+		<key>chess_dp1</key>
+		<string>death_prophet_exorcism</string>
+		<key>chess_dp11</key>
+		<string>death_prophet_exorcism</string>
 		<key>chess_dr</key>
 		<string>shooter_aura</string>
 		<key>chess_dr1</key>
@@ -737,11 +743,11 @@
 		<key>chess_fur11</key>
 		<string>fur_tree</string>
 		<key>chess_ga</key>
-		<string>alchemist_acid_spray</string>
+		<string>alchemist_chemical_rage</string>
 		<key>chess_ga1</key>
-		<string>alchemist_acid_spray</string>
+		<string>alchemist_chemical_rage</string>
 		<key>chess_ga11</key>
-		<string>alchemist_acid_spray</string>
+		<string>alchemist_chemical_rage</string>
 		<key>chess_gyro</key>
 		<string>gyrocopter_call_down</string>
 		<key>chess_gyro1</key>
@@ -840,6 +846,12 @@
 		<string>phantom_assassin_coup_de_grace</string>
 		<key>chess_pa11</key>
 		<string>phantom_assassin_coup_de_grace</string>
+		<key>chess_pom</key>
+		<string>pom_arrow_far</string>
+		<key>chess_pom1</key>
+		<string>pom_arrow_far</string>
+		<key>chess_pom11</key>
+		<string>pom_arrow_far</string>
 		<key>chess_puck</key>
 		<string>puck_illusory_orb</string>
 		<key>chess_puck1</key>
@@ -858,6 +870,12 @@
 		<string>razor_plasma_field</string>
 		<key>chess_razor11</key>
 		<string>razor_plasma_field</string>
+		<key>chess_riki</key>
+		<string>riki_smoke_screen</string>
+		<key>chess_riki1</key>
+		<string>riki_smoke_screen</string>
+		<key>chess_riki11</key>
+		<string>riki_smoke_screen</string>
 		<key>chess_sf</key>
 		<string>nevermore_requiem</string>
 		<key>chess_sf1</key>
@@ -883,11 +901,11 @@
 		<key>chess_slardar11</key>
 		<string>slardar_amplify_damage</string>
 		<key>chess_slark</key>
-		<string>slark_shadow_dance</string>
+		<string>slark_jump</string>
 		<key>chess_slark1</key>
-		<string>slark_shadow_dance</string>
+		<string>slark_jump</string>
 		<key>chess_slark11</key>
-		<string>slark_shadow_dance</string>
+		<string>slark_jump</string>
 		<key>chess_sniper</key>
 		<string>sniper_assassinate</string>
 		<key>chess_sniper1</key>

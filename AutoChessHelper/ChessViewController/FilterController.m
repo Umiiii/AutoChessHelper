@@ -37,12 +37,27 @@
    self.navigationItem.rightBarButtonItem = detail;
   //  NSArray* items = [[NSArray alloc]initWithObjects:back, nil];
    // [self.navigationController.navigationController.navigationBar setItems:items animated:YES];
-    [self.tableView setEditing:YES animated:YES]; 
-    self.filterOptions = [[NSArray alloc]initWithObjects:@"is_human",@"is_knight",@"is_assassin",@"is_mage",
-                          @"is_warlock",@"is_mech",@"is_hunter",@"is_druid",@"is_shaman",@"is_troll",
-                          @"is_beast",@"is_elf",@"is_demon",@"is_demonhunter",@"is_undead",@"is_orc",
-                          @"is_naga",@"is_goblin",@"is_element",@"is_dwarf",@"is_ogre", NULL];
-    
+    [self.tableView setEditing:YES animated:YES];
+    NSMutableSet* filterOptions = [[NSMutableSet alloc]init];
+    NSMutableDictionary* ability = [[DOTAManager sharedInstance]abilityImageName];
+    for (NSString* str in ability){
+        if ([str hasPrefix:@"is_"] ){
+            if ([str isEqualToString:@"is_halobios"] || [str isEqualToString:@"is_plant"] || [str isEqualToString:@"is_ward"]
+                ||[str isEqualToString:@"is_imp"])
+                continue;
+            NSString* new = str;
+            new = [new stringByReplacingOccurrencesOfString:@"_buff" withString:@""];
+            new = [new stringByReplacingOccurrencesOfString:@"_plus" withString:@""];
+            //DLog(@"%@",new);
+            [filterOptions addObject:new];
+        }
+    }
+    self.filterOptions = [filterOptions allObjects];
+//    self.filterOptions = [[NSArray alloc]initWithObjects:@"is_human",@"is_knight",@"is_assassin",@"is_mage",
+//                          @"is_warlock",@"is_mech",@"is_hunter",@"is_druid",@"is_shaman",@"is_troll",
+//                          @"is_beast",@"is_elf",@"is_demon",@"is_demonhunter",@"is_undead",@"is_orc",
+//                          @"is_naga",@"is_goblin",@"is_element",@"is_dwarf",@"is_ogre",@"is_dragon", NULL];
+
 }
 
 #pragma mark - Table view data source

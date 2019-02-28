@@ -729,7 +729,7 @@
 			<key>AbilityCastPoint</key>
 			<string>0.5</string>
 			<key>AbilityCooldown</key>
-			<string>7 6 5</string>
+			<string>8 6 4</string>
 			<key>AbilityManaCost</key>
 			<string>100</string>
 			<key>AbilitySpecial</key>
@@ -737,7 +737,7 @@
 				<key>01</key>
 				<dict>
 					<key>damage_per_missile</key>
-					<string>200 300 400</string>
+					<string>250 350 450</string>
 					<key>var_type</key>
 					<string>FIELD_INTEGER</string>
 				</dict>
@@ -2144,7 +2144,10 @@
 					<key>Properties</key>
 					<string></string>
 					<key>States</key>
-					<string></string>
+					<dict>
+						<key>MODIFIER_STATE_UNSELECTABLE</key>
+						<string>MODIFIER_STATE_VALUE_ENABLED</string>
+					</dict>
 				</dict>
 			</dict>
 			<key>precache</key>
@@ -2203,6 +2206,79 @@
 					<string>1.0</string>
 					<key>var_type</key>
 					<string>FIELD_FLOAT</string>
+				</dict>
+			</dict>
+			<key>MaxLevel</key>
+			<string>3</string>
+		</dict>
+		<key>alchemist_chemical_rage</key>
+		<dict>
+			<key>AbilityCastAnimation</key>
+			<string>ACT_INVALID</string>
+			<key>AbilityCastPoint</key>
+			<string>0</string>
+			<key>AbilityCastRange</key>
+			<string>9999</string>
+			<key>AbilityCooldown</key>
+			<string>25 20 15</string>
+			<key>AbilityManaCost</key>
+			<string>100</string>
+			<key>AbilitySound</key>
+			<string>Hero_Alchemist.ChemicalRage.Cast</string>
+			<key>AbilitySpecial</key>
+			<dict>
+				<key>01</key>
+				<dict>
+					<key>duration</key>
+					<string>60</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+				<key>02</key>
+				<dict>
+					<key>transformation_time</key>
+					<string>0.35</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+				<key>03</key>
+				<dict>
+					<key>LinkedSpecialBonus</key>
+					<string>special_bonus_unique_alchemist_3</string>
+					<key>base_attack_time</key>
+					<string>0.7 0.55 0.4</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+				<key>04</key>
+				<dict>
+					<key>bonus_health</key>
+					<string>0</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>05</key>
+				<dict>
+					<key>LinkedSpecialBonus</key>
+					<string>special_bonus_unique_alchemist_4</string>
+					<key>bonus_health_regen</key>
+					<string>40 60 80</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>06</key>
+				<dict>
+					<key>bonus_mana_regen</key>
+					<string>0 0 0</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+				<key>07</key>
+				<dict>
+					<key>bonus_movespeed</key>
+					<string>0 0 0</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
 				</dict>
 			</dict>
 			<key>MaxLevel</key>
@@ -2349,55 +2425,6 @@
 					<string>2 3 4</string>
 					<key>var_type</key>
 					<string>FIELD_FLOAT</string>
-				</dict>
-			</dict>
-			<key>MaxLevel</key>
-			<string>3</string>
-		</dict>
-		<key>batrider_firefly</key>
-		<dict>
-			<key>AbilityCooldown</key>
-			<string>10</string>
-			<key>AbilityManaCost</key>
-			<string>0</string>
-			<key>AbilitySpecial</key>
-			<dict>
-				<key>01</key>
-				<dict>
-					<key>damage_per_second</key>
-					<string>20 30 40</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>02</key>
-				<dict>
-					<key>radius</key>
-					<string>200 200 200</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>03</key>
-				<dict>
-					<key>LinkedSpecialBonus</key>
-					<string>special_bonus_unique_batrider_1</string>
-					<key>duration</key>
-					<string>15</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>04</key>
-				<dict>
-					<key>tick_interval</key>
-					<string>0.5 0.5 0.5 0.5</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>05</key>
-				<dict>
-					<key>tree_radius</key>
-					<string>100 100 100 100</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
 				</dict>
 			</dict>
 			<key>MaxLevel</key>
@@ -2999,40 +3026,6 @@
 					<key>Target</key>
 					<string>POINT</string>
 				</dict>
-			</dict>
-		</dict>
-		<key>blue</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
-			<key>AbilityCastPoint</key>
-			<string>0</string>
-			<key>AbilityCastRange</key>
-			<string>0</string>
-			<key>AbilityCooldown</key>
-			<string>1</string>
-			<key>AbilityManaCost</key>
-			<string>0</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
-			<key>Modifiers</key>
-			<dict>
-				<key>modifier_name</key>
-				<dict>
-					<key>Duration</key>
-					<string>10</string>
-					<key>Passive</key>
-					<string>1</string>
-					<key>StatusEffectName</key>
-					<string>particles/status_effect_custom.vpcf</string>
-					<key>StatusEffectPriority</key>
-					<string>10</string>
-				</dict>
-			</dict>
-			<key>precache</key>
-			<dict>
-				<key>particle</key>
-				<string>particles/status_effect_custom.vpcf</string>
 			</dict>
 		</dict>
 		<key>boss_bianyang</key>
@@ -4283,6 +4276,100 @@
 			<key>BaseClass</key>
 			<string>ability_datadriven</string>
 		</dict>
+		<key>death_prophet_exorcism</key>
+		<dict>
+			<key>AbilityCastAnimation</key>
+			<string>ACT_DOTA_CAST_ABILITY_4</string>
+			<key>AbilityCastPoint</key>
+			<string>0.3</string>
+			<key>AbilityCastRange</key>
+			<string>9999</string>
+			<key>AbilityCooldown</key>
+			<string>20 15 10</string>
+			<key>AbilityDuration</key>
+			<string>10</string>
+			<key>AbilityManaCost</key>
+			<string>100</string>
+			<key>AbilitySound</key>
+			<string>Hero_DeathProphet.Exorcism.Cast</string>
+			<key>AbilitySpecial</key>
+			<dict>
+				<key>01</key>
+				<dict>
+					<key>radius</key>
+					<string>700 700 700</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>02</key>
+				<dict>
+					<key>LinkedSpecialBonus</key>
+					<string>special_bonus_unique_death_prophet</string>
+					<key>spirits</key>
+					<string>10 15 20</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>03</key>
+				<dict>
+					<key>spirit_speed</key>
+					<string>500 500 500</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>04</key>
+				<dict>
+					<key>max_distance</key>
+					<string>1000 1000 1000</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>05</key>
+				<dict>
+					<key>give_up_distance</key>
+					<string>800 800 800</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>06</key>
+				<dict>
+					<key>min_damage</key>
+					<string>100</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>07</key>
+				<dict>
+					<key>max_damage</key>
+					<string>100</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>08</key>
+				<dict>
+					<key>heal_percent</key>
+					<string>25 25 25</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>09</key>
+				<dict>
+					<key>average_damage</key>
+					<string>100</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>10</key>
+				<dict>
+					<key>ghost_spawn_rate</key>
+					<string>0.3</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+			</dict>
+			<key>MaxLevel</key>
+			<string>3</string>
+		</dict>
 		<key>death_summon_3_donkey</key>
 		<dict>
 			<key>AbilityBehavior</key>
@@ -4378,7 +4465,7 @@
 				<key>03</key>
 				<dict>
 					<key>damage_max</key>
-					<string>100 200 300</string>
+					<string>100 150 200</string>
 					<key>var_type</key>
 					<string>FIELD_INTEGER</string>
 				</dict>
@@ -7934,6 +8021,32 @@
 				</dict>
 			</dict>
 		</dict>
+		<key>invisible_to_enemy</key>
+		<dict>
+			<key>AbilityBehavior</key>
+			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
+			<key>BaseClass</key>
+			<string>ability_datadriven</string>
+			<key>Modifiers</key>
+			<dict>
+				<key>modifier_invisible_to_enemy</key>
+				<dict>
+					<key>Attributes</key>
+					<string>MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE</string>
+					<key>Duration</key>
+					<string>99999</string>
+					<key>Passive</key>
+					<string>1</string>
+					<key>Properties</key>
+					<string></string>
+					<key>States</key>
+					<dict>
+						<key>MODIFIER_STATE_INVISIBLE</key>
+						<string>MODIFIER_STATE_VALUE_ENABLED</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
 		<key>is_assassin</key>
 		<dict>
 			<key>AbilityBehavior</key>
@@ -7999,7 +8112,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE</key>
-						<string>350</string>
+						<string>300</string>
 					</dict>
 				</dict>
 				<key>modifier_coup_de_grace_datadriven</key>
@@ -8110,7 +8223,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE</key>
-						<string>450</string>
+						<string>400</string>
 					</dict>
 				</dict>
 				<key>modifier_coup_de_grace_datadriven_plus</key>
@@ -8124,7 +8237,7 @@
 						<key>Random</key>
 						<dict>
 							<key>Chance</key>
-							<string>20</string>
+							<string>15</string>
 							<key>OnSuccess</key>
 							<dict>
 								<key>ApplyModifier</key>
@@ -8150,6 +8263,117 @@
 					<string>1</string>
 				</dict>
 				<key>modifier_is_assassin_buff_plus</key>
+				<dict>
+					<key>EffectAttachType</key>
+					<string>follow_origin</string>
+					<key>EffectName</key>
+					<string>effect/cike/1econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf</string>
+					<key>IsBuff</key>
+					<string>1</string>
+					<key>Passive</key>
+					<string>1</string>
+					<key>TextureName</key>
+					<string>silencer_gaives_of_wisdom</string>
+				</dict>
+			</dict>
+			<key>precache</key>
+			<dict>
+				<key>particle</key>
+				<string>effect/cike/1econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf</string>
+				<key>soundfile</key>
+				<string>soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts</string>
+			</dict>
+		</dict>
+		<key>is_assassin_buff_plus_plus</key>
+		<dict>
+			<key>AbilityBehavior</key>
+			<string>DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
+			<key>AbilityTextureName</key>
+			<string>silencer_gaives_of_wisdom</string>
+			<key>AbilityUnitTargetTeam</key>
+			<string>DOTA_UNIT_TARGET_TEAM_FRIENDLY</string>
+			<key>AbilityUnitTargetType</key>
+			<string>DOTA_UNIT_TARGET_BASIC</string>
+			<key>BaseClass</key>
+			<string>ability_datadriven</string>
+			<key>Modifiers</key>
+			<dict>
+				<key>modifier_coup_de_grace_crit_datadriven_plus_plus</key>
+				<dict>
+					<key>IsHidden</key>
+					<string>1</string>
+					<key>OnAttackLanded</key>
+					<dict>
+						<key>FireEffect</key>
+						<dict>
+							<key>ControlPointEntities</key>
+							<dict>
+								<key>TARGET</key>
+								<string>follow_origin</string>
+							</dict>
+							<key>EffectAttachType</key>
+							<string>start_at_customorigin</string>
+							<key>EffectName</key>
+							<string>particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf</string>
+						</dict>
+						<key>FireSound</key>
+						<dict>
+							<key>EffectName</key>
+							<string>Hero_PhantomAssassin.CoupDeGrace</string>
+							<key>Target</key>
+							<string>TARGET</string>
+						</dict>
+						<key>RemoveModifier</key>
+						<dict>
+							<key>ModifierName</key>
+							<string>modifier_coup_de_grace_crit_datadriven_plus_plus</string>
+							<key>Target</key>
+							<string>CASTER</string>
+						</dict>
+					</dict>
+					<key>Properties</key>
+					<dict>
+						<key>MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE</key>
+						<string>500</string>
+					</dict>
+				</dict>
+				<key>modifier_coup_de_grace_datadriven_plus_plus</key>
+				<dict>
+					<key>Attributes</key>
+					<string>MODIFIER_ATTRIBUTE_MULTIPLE</string>
+					<key>IsHidden</key>
+					<string>1</string>
+					<key>OnAttackStart</key>
+					<dict>
+						<key>Random</key>
+						<dict>
+							<key>Chance</key>
+							<string>20</string>
+							<key>OnSuccess</key>
+							<dict>
+								<key>ApplyModifier</key>
+								<dict>
+									<key>ModifierName</key>
+									<string>modifier_coup_de_grace_crit_datadriven_plus_plus</string>
+									<key>Target</key>
+									<string>CASTER</string>
+								</dict>
+							</dict>
+							<key>PseudoRandom</key>
+							<string>DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT</string>
+						</dict>
+						<key>RemoveModifier</key>
+						<dict>
+							<key>ModifierName</key>
+							<string>modifier_coup_de_grace_crit_datadriven_plus_plus</string>
+							<key>Target</key>
+							<string>CASTER</string>
+						</dict>
+					</dict>
+					<key>Passive</key>
+					<string>1</string>
+				</dict>
+				<key>modifier_is_assassin_buff_plus_plus</key>
 				<dict>
 					<key>EffectAttachType</key>
 					<string>follow_origin</string>
@@ -8215,7 +8439,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE</key>
-						<string>10</string>
+						<string>15</string>
 					</dict>
 					<key>States</key>
 					<string></string>
@@ -8258,7 +8482,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE</key>
-						<string>15</string>
+						<string>20</string>
 					</dict>
 					<key>States</key>
 					<string></string>
@@ -8301,7 +8525,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE</key>
-						<string>20</string>
+						<string>25</string>
 					</dict>
 					<key>States</key>
 					<string></string>
@@ -8683,6 +8907,49 @@
 				<string>particles/units/heroes/hero_mirana/mirana_moonlight_owner.vpcf</string>
 			</dict>
 		</dict>
+		<key>is_elf_buff_plus_plus</key>
+		<dict>
+			<key>AbilityBehavior</key>
+			<string>DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
+			<key>AbilityTextureName</key>
+			<string>wisp_overcharge</string>
+			<key>AbilityUnitTargetTeam</key>
+			<string>DOTA_UNIT_TARGET_TEAM_FRIENDLY</string>
+			<key>AbilityUnitTargetType</key>
+			<string>DOTA_UNIT_TARGET_BASIC</string>
+			<key>BaseClass</key>
+			<string>ability_datadriven</string>
+			<key>Modifiers</key>
+			<dict>
+				<key>modifier_is_elf_buff_plus_plus</key>
+				<dict>
+					<key>EffectAttachType</key>
+					<string>follow_overhead</string>
+					<key>EffectName</key>
+					<string>particles/units/heroes/hero_mirana/mirana_moonlight_owner.vpcf</string>
+					<key>IsBuff</key>
+					<string>1</string>
+					<key>IsDebuff</key>
+					<string>0</string>
+					<key>Passive</key>
+					<string>1</string>
+					<key>Properties</key>
+					<dict>
+						<key>MODIFIER_PROPERTY_EVASION_CONSTANT</key>
+						<string>25</string>
+					</dict>
+					<key>States</key>
+					<string></string>
+					<key>TextureName</key>
+					<string>wisp_overcharge</string>
+				</dict>
+			</dict>
+			<key>precache</key>
+			<dict>
+				<key>particle</key>
+				<string>particles/units/heroes/hero_mirana/mirana_moonlight_owner.vpcf</string>
+			</dict>
+		</dict>
 		<key>is_ghost</key>
 		<dict>
 			<key>AbilityBehavior</key>
@@ -8769,30 +9036,6 @@
 					<string></string>
 					<key>TextureName</key>
 					<string>techies_minefield_sign_swine</string>
-				</dict>
-			</dict>
-		</dict>
-		<key>is_halobios</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
-			<key>AbilityTextureName</key>
-			<string>lion_voodoo_fish</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
-			<key>Modifiers</key>
-			<dict>
-				<key>modifier_is_halobios</key>
-				<dict>
-					<key>IsHidden</key>
-					<string>1</string>
-					<key>Passive</key>
-					<string>1</string>
-					<key>Properties</key>
-					<dict>
-						<key>MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS</key>
-						<string>25</string>
-					</dict>
 				</dict>
 			</dict>
 		</dict>
@@ -9077,7 +9320,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE</key>
-						<string>30</string>
+						<string>25</string>
 					</dict>
 					<key>States</key>
 					<string></string>
@@ -9120,7 +9363,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE</key>
-						<string>30</string>
+						<string>25</string>
 					</dict>
 					<key>States</key>
 					<string></string>
@@ -9132,39 +9375,6 @@
 			<dict>
 				<key>particle</key>
 				<string>effect/lieren/1.vpcf</string>
-			</dict>
-		</dict>
-		<key>is_imp</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
-			<key>AbilityTextureName</key>
-			<string>bane_fiends_grip</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
-			<key>Modifiers</key>
-			<dict>
-				<key>modifier_is_imp</key>
-				<dict>
-					<key>IsHidden</key>
-					<string>1</string>
-					<key>OnIntervalThink</key>
-					<dict>
-						<key>RunScript</key>
-						<dict>
-							<key>Function</key>
-							<string>FindBeastAura</string>
-							<key>ScriptFile</key>
-							<string>scripts/vscripts/addon_game_mode.lua</string>
-							<key>Target</key>
-							<string>CASTER</string>
-						</dict>
-					</dict>
-					<key>Passive</key>
-					<string>1</string>
-					<key>ThinkInterval</key>
-					<string>1</string>
-				</dict>
 			</dict>
 		</dict>
 		<key>is_knight</key>
@@ -9702,7 +9912,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS</key>
-						<string>20</string>
+						<string>30</string>
 					</dict>
 					<key>TextureName</key>
 					<string>lion_voodoo_fish</string>
@@ -9743,7 +9953,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS</key>
-						<string>40</string>
+						<string>30</string>
 					</dict>
 					<key>TextureName</key>
 					<string>lion_voodoo_fish</string>
@@ -9865,7 +10075,7 @@
 							<key>Target</key>
 							<string>CASTER</string>
 							<key>hp</key>
-							<string>250</string>
+							<string>200</string>
 							<key>x</key>
 							<string>1.1</string>
 						</dict>
@@ -9915,7 +10125,7 @@
 							<key>Target</key>
 							<string>CASTER</string>
 							<key>hp</key>
-							<string>350</string>
+							<string>300</string>
 							<key>x</key>
 							<string>1.1</string>
 						</dict>
@@ -9965,7 +10175,7 @@
 							<key>Target</key>
 							<string>CASTER</string>
 							<key>hp</key>
-							<string>450</string>
+							<string>400</string>
 							<key>x</key>
 							<string>1.1</string>
 						</dict>
@@ -9984,29 +10194,16 @@
 				</dict>
 			</dict>
 		</dict>
-		<key>is_plant</key>
+		<key>is_satyr</key>
 		<dict>
 			<key>AbilityBehavior</key>
 			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
 			<key>AbilityTextureName</key>
-			<string>furion_force_of_nature</string>
+			<string>riki_permanent_invisibility</string>
 			<key>BaseClass</key>
 			<string>ability_datadriven</string>
-			<key>Modifiers</key>
-			<dict>
-				<key>modifier_is_plant</key>
-				<dict>
-					<key>IsHidden</key>
-					<string>1</string>
-					<key>Passive</key>
-					<string>1</string>
-					<key>Properties</key>
-					<dict>
-						<key>MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS</key>
-						<string>6</string>
-					</dict>
-				</dict>
-			</dict>
+			<key>MaxLevel</key>
+			<string>1</string>
 		</dict>
 		<key>is_shaman</key>
 		<dict>
@@ -10166,7 +10363,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS</key>
-						<string>-5</string>
+						<string>-4</string>
 					</dict>
 					<key>TextureName</key>
 					<string>arc_warden_spark_wraith</string>
@@ -10205,7 +10402,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS</key>
-						<string>-7</string>
+						<string>-6</string>
 					</dict>
 					<key>TextureName</key>
 					<string>arc_warden_spark_wraith</string>
@@ -10244,7 +10441,7 @@
 					<key>Properties</key>
 					<dict>
 						<key>MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS</key>
-						<string>-9</string>
+						<string>-7</string>
 					</dict>
 					<key>TextureName</key>
 					<string>arc_warden_spark_wraith</string>
@@ -10254,34 +10451,6 @@
 			<dict>
 				<key>particle</key>
 				<string>particles/units/heroes/hero_skeletonking/wraith_king_ghosts_spirits_copy.vpcf</string>
-			</dict>
-		</dict>
-		<key>is_ward</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
-			<key>AbilityTextureName</key>
-			<string>backdoor_protection</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
-			<key>Modifiers</key>
-			<dict>
-				<key>modifier_is_ward</key>
-				<dict>
-					<key>IsHidden</key>
-					<string>1</string>
-					<key>Passive</key>
-					<string>1</string>
-					<key>Properties</key>
-					<dict>
-						<key>MODIFIER_PROPERTY_DISABLE_HEALING</key>
-						<string>1</string>
-						<key>MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS</key>
-						<string>25</string>
-					</dict>
-					<key>States</key>
-					<string></string>
-				</dict>
 			</dict>
 		</dict>
 		<key>is_warlock</key>
@@ -11045,7 +11214,7 @@
 			<key>AbilityCastRange</key>
 			<string>9999</string>
 			<key>AbilityCooldown</key>
-			<string>13 10 7</string>
+			<string>10 8 6</string>
 			<key>AbilityManaCost</key>
 			<string>100</string>
 			<key>AbilitySpecial</key>
@@ -11150,78 +11319,6 @@
 					<string>CASTER</string>
 					<key>hp_per</key>
 					<string>%hp_per</string>
-				</dict>
-			</dict>
-		</dict>
-		<key>lycan_shapeshift</key>
-		<dict>
-			<key>AbilityCastPoint</key>
-			<string>0.5</string>
-			<key>AbilityCastRange</key>
-			<string>9999</string>
-			<key>AbilityCooldown</key>
-			<string>20</string>
-			<key>AbilityManaCost</key>
-			<string>100</string>
-			<key>AbilitySpecial</key>
-			<dict>
-				<key>01</key>
-				<dict>
-					<key>LinkedSpecialBonus</key>
-					<string>special_bonus_unique_lycan_1</string>
-					<key>duration</key>
-					<string>18</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>02</key>
-				<dict>
-					<key>speed</key>
-					<string>650</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>03</key>
-				<dict>
-					<key>bonus_night_vision</key>
-					<string>1000</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>04</key>
-				<dict>
-					<key>transformation_time</key>
-					<string>1</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>05</key>
-				<dict>
-					<key>crit_chance</key>
-					<string>90</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>06</key>
-				<dict>
-					<key>crit_multiplier</key>
-					<string>250 350 450</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-			</dict>
-			<key>MaxLevel</key>
-			<string>3</string>
-			<key>OnSpellStart</key>
-			<dict>
-				<key>RunScript</key>
-				<dict>
-					<key>Function</key>
-					<string>LycSummonWolf</string>
-					<key>ScriptFile</key>
-					<string>scripts/vscripts/addon_game_mode.lua</string>
-					<key>Target</key>
-					<string>CASTER</string>
 				</dict>
 			</dict>
 		</dict>
@@ -13282,71 +13379,6 @@
 				</dict>
 			</dict>
 		</dict>
-		<key>mana_cost1</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
-			<key>AbilityTextureName</key>
-			<string>custom/mana_cost1</string>
-			<key>AbilityUnitTargetTeam</key>
-			<string>DOTA_UNIT_TARGET_TEAM_FRIENDLY</string>
-			<key>AbilityUnitTargetType</key>
-			<string>DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
-		</dict>
-		<key>mana_cost2</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
-			<key>AbilityTextureName</key>
-			<string>custom/mana_cost2</string>
-			<key>AbilityUnitTargetTeam</key>
-			<string>DOTA_UNIT_TARGET_TEAM_FRIENDLY</string>
-			<key>AbilityUnitTargetType</key>
-			<string>DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
-		</dict>
-		<key>mana_cost3</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
-			<key>AbilityTextureName</key>
-			<string>custom/mana_cost3</string>
-			<key>AbilityUnitTargetTeam</key>
-			<string>DOTA_UNIT_TARGET_TEAM_FRIENDLY</string>
-			<key>AbilityUnitTargetType</key>
-			<string>DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
-		</dict>
-		<key>mana_cost4</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
-			<key>AbilityTextureName</key>
-			<string>custom/mana_cost4</string>
-			<key>AbilityUnitTargetTeam</key>
-			<string>DOTA_UNIT_TARGET_TEAM_FRIENDLY</string>
-			<key>AbilityUnitTargetType</key>
-			<string>DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
-		</dict>
-		<key>mana_cost5</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_PASSIVE</string>
-			<key>AbilityTextureName</key>
-			<string>custom/mana_cost5</string>
-			<key>AbilityUnitTargetTeam</key>
-			<string>DOTA_UNIT_TARGET_TEAM_FRIENDLY</string>
-			<key>AbilityUnitTargetType</key>
-			<string>DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
-		</dict>
 		<key>mana_recharge_1</key>
 		<dict>
 			<key>AbilityBehavior</key>
@@ -15254,59 +15286,6 @@
 			<key>MaxLevel</key>
 			<string>3</string>
 		</dict>
-		<key>ogre_magi_ignite</key>
-		<dict>
-			<key>AbilityCastAnimation</key>
-			<string>ACT_DOTA_CAST_ABILITY_2</string>
-			<key>AbilityCastPoint</key>
-			<string>0.5</string>
-			<key>AbilityCastRange</key>
-			<string>9999</string>
-			<key>AbilityCooldown</key>
-			<string>5</string>
-			<key>AbilityManaCost</key>
-			<string>100</string>
-			<key>AbilitySpecial</key>
-			<dict>
-				<key>01</key>
-				<dict>
-					<key>duration</key>
-					<string>10</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>02</key>
-				<dict>
-					<key>burn_damage</key>
-					<string>30 60 90</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>03</key>
-				<dict>
-					<key>slow_movement_speed_pct</key>
-					<string>-20</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>04</key>
-				<dict>
-					<key>projectile_speed</key>
-					<string>1000</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>05</key>
-				<dict>
-					<key>multicast_delay</key>
-					<string>0.5</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-			</dict>
-			<key>MaxLevel</key>
-			<string>3</string>
-		</dict>
 		<key>omniknight_purification</key>
 		<dict>
 			<key>AbilityCastPoint</key>
@@ -15467,6 +15446,121 @@
 			<string>ability_datadriven</string>
 			<key>MaxLevel</key>
 			<string>1</string>
+		</dict>
+		<key>pom_arrow_far</key>
+		<dict>
+			<key>AbilityBehavior</key>
+			<string>DOTA_ABILITY_BEHAVIOR_UNIT_TARGET</string>
+			<key>AbilityCastAnimation</key>
+			<string>ACT_DOTA_CAST_ABILITY_2</string>
+			<key>AbilityCastPoint</key>
+			<string>0.3</string>
+			<key>AbilityCastRange</key>
+			<string>99999</string>
+			<key>AbilityCooldown</key>
+			<string>10 8 6</string>
+			<key>AbilityManaCost</key>
+			<string>100</string>
+			<key>AbilitySpecial</key>
+			<dict>
+				<key>01</key>
+				<dict>
+					<key>min_damage</key>
+					<string>50 75 100</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+				<key>02</key>
+				<dict>
+					<key>min_stun</key>
+					<string>1 1.5 2</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+				<key>03</key>
+				<dict>
+					<key>max_damage</key>
+					<string>500 750 1000</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+				<key>04</key>
+				<dict>
+					<key>max_stun</key>
+					<string>5 7.5 10</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+				<key>05</key>
+				<dict>
+					<key>max_distance</key>
+					<string>6000</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+			</dict>
+			<key>AbilityTextureName</key>
+			<string>mirana_arrow</string>
+			<key>AbilityUnitDamageType</key>
+			<string>DAMAGE_TYPE_MAGICAL</string>
+			<key>AbilityUnitTargetTeam</key>
+			<string>DOTA_UNIT_TARGET_TEAM_BOTH</string>
+			<key>AbilityUnitTargetType</key>
+			<string>DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC</string>
+			<key>BaseClass</key>
+			<string>ability_datadriven</string>
+			<key>MaxLevel</key>
+			<string>3</string>
+			<key>OnProjectileHitUnit</key>
+			<dict>
+				<key>DeleteOnHit</key>
+				<string>1</string>
+				<key>RunScript</key>
+				<dict>
+					<key>Function</key>
+					<string>HitPOMTarget</string>
+					<key>ScriptFile</key>
+					<string>scripts/vscripts/addon_game_mode.lua</string>
+					<key>Target</key>
+					<string>TARGET</string>
+					<key>max_damage</key>
+					<string>%max_damage</string>
+					<key>max_distance</key>
+					<string>%max_distance</string>
+					<key>max_stun</key>
+					<string>%max_stun</string>
+					<key>min_damage</key>
+					<string>%min_damage</string>
+					<key>min_stun</key>
+					<string>%min_stun</string>
+				</dict>
+			</dict>
+			<key>OnSpellStart</key>
+			<dict>
+				<key>RunScript</key>
+				<dict>
+					<key>Function</key>
+					<string>HitPOMStart</string>
+					<key>ScriptFile</key>
+					<string>scripts/vscripts/addon_game_mode.lua</string>
+					<key>Target</key>
+					<string>TARGET</string>
+				</dict>
+				<key>TrackingProjectile</key>
+				<dict>
+					<key>EffectName</key>
+					<string>effect/pom_arrow_far/arrow.vpcf</string>
+					<key>MoveSpeed</key>
+					<string>800</string>
+					<key>Target</key>
+					<string>TARGET</string>
+				</dict>
+			</dict>
+			<key>precache</key>
+			<dict>
+				<key>particle</key>
+				<string>effect/pom_arrow_far/arrow.vpcf</string>
+			</dict>
 		</dict>
 		<key>puck_illusory_orb</key>
 		<dict>
@@ -15723,7 +15817,7 @@
 				<key>03</key>
 				<dict>
 					<key>radius</key>
-					<string>400 500 600</string>
+					<string>400 450 500</string>
 					<key>var_type</key>
 					<string>FIELD_INTEGER</string>
 				</dict>
@@ -15889,6 +15983,63 @@
 					<string>FIELD_FLOAT</string>
 				</dict>
 			</dict>
+		</dict>
+		<key>riki_smoke_screen</key>
+		<dict>
+			<key>AbilityCastAnimation</key>
+			<string>ACT_DOTA_CAST_ABILITY_1</string>
+			<key>AbilityCastPoint</key>
+			<string>0.2</string>
+			<key>AbilityCastRange</key>
+			<string>9999</string>
+			<key>AbilityCooldown</key>
+			<string>15</string>
+			<key>AbilityDuration</key>
+			<string>3 4 5</string>
+			<key>AbilityManaCost</key>
+			<string>100</string>
+			<key>AbilitySound</key>
+			<string>Hero_Riki.Smoke_Screen</string>
+			<key>AbilitySpecial</key>
+			<dict>
+				<key>01</key>
+				<dict>
+					<key>radius</key>
+					<string>325</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>02</key>
+				<dict>
+					<key>miss_rate</key>
+					<string>30 40 50</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>03</key>
+				<dict>
+					<key>movement_speed_reduction</key>
+					<string>0</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>04</key>
+				<dict>
+					<key>turn_reduction</key>
+					<string>0</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+				<key>05</key>
+				<dict>
+					<key>duration</key>
+					<string>3 4 5</string>
+					<key>var_type</key>
+					<string>FIELD_INTEGER</string>
+				</dict>
+			</dict>
+			<key>MaxLevel</key>
+			<string>3</string>
 		</dict>
 		<key>river_speed</key>
 		<dict>
@@ -16580,6 +16731,66 @@
 			<key>MaxLevel</key>
 			<string>3</string>
 		</dict>
+		<key>slark_jump</key>
+		<dict>
+			<key>AbilityBehavior</key>
+			<string>DOTA_ABILITY_BEHAVIOR_UNIT_TARGET</string>
+			<key>AbilityCastAnimation</key>
+			<string>ACT_DOTA_CAST_ABILITY_2</string>
+			<key>AbilityCastPoint</key>
+			<string>0.3</string>
+			<key>AbilityCastRange</key>
+			<string>99999</string>
+			<key>AbilityCooldown</key>
+			<string>10 8 6</string>
+			<key>AbilityManaCost</key>
+			<string>100</string>
+			<key>AbilitySpecial</key>
+			<dict>
+				<key>01</key>
+				<dict>
+					<key>damage</key>
+					<string>200 300 400</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+				<key>02</key>
+				<dict>
+					<key>disarm_duration</key>
+					<string>3 5 7</string>
+					<key>var_type</key>
+					<string>FIELD_FLOAT</string>
+				</dict>
+			</dict>
+			<key>AbilityTextureName</key>
+			<string>slark_pounce</string>
+			<key>AbilityUnitDamageType</key>
+			<string>DAMAGE_TYPE_PHYSICAL</string>
+			<key>AbilityUnitTargetTeam</key>
+			<string>DOTA_UNIT_TARGET_TEAM_BOTH</string>
+			<key>AbilityUnitTargetType</key>
+			<string>DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC</string>
+			<key>BaseClass</key>
+			<string>ability_datadriven</string>
+			<key>MaxLevel</key>
+			<string>3</string>
+			<key>OnSpellStart</key>
+			<dict>
+				<key>RunScript</key>
+				<dict>
+					<key>Function</key>
+					<string>SlarkJump</string>
+					<key>ScriptFile</key>
+					<string>scripts/vscripts/addon_game_mode.lua</string>
+					<key>Target</key>
+					<string>TARGET</string>
+					<key>damage</key>
+					<string>%damage</string>
+					<key>disarm_duration</key>
+					<string>%disarm_duration</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>slark_shadow_dance</key>
 		<dict>
 			<key>AbilityCastPoint</key>
@@ -16805,27 +17016,6 @@
 			</dict>
 			<key>MaxLevel</key>
 			<string>1</string>
-		</dict>
-		<key>take_up_castle</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED</string>
-			<key>AbilityCastAnimation</key>
-			<string>ACT_DOTA_TELEPORT</string>
-			<key>AbilityCastPoint</key>
-			<string>0</string>
-			<key>AbilityChannelTime</key>
-			<string>5</string>
-			<key>AbilityCooldown</key>
-			<string>5</string>
-			<key>AbilityTextureName</key>
-			<string>legion_commander_duel</string>
-			<key>AbilityUnitTargetTeam</key>
-			<string>DOTA_UNIT_TARGET_TEAM_BOTH</string>
-			<key>AbilityUnitTargetType</key>
-			<string>DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC</string>
-			<key>BaseClass</key>
-			<string>ability_datadriven</string>
 		</dict>
 		<key>tb_mohua</key>
 		<dict>
@@ -17217,153 +17407,6 @@
 			<key>MaxLevel</key>
 			<string>3</string>
 		</dict>
-		<key>troll_warlord_whirling_axes_melee</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_NO_TARGET</string>
-			<key>AbilityCastPoint</key>
-			<string>0.3</string>
-			<key>AbilityCastRange</key>
-			<string>9999</string>
-			<key>AbilityCooldown</key>
-			<string>5</string>
-			<key>AbilityManaCost</key>
-			<string>0</string>
-			<key>AbilitySpecial</key>
-			<dict>
-				<key>01</key>
-				<dict>
-					<key>LinkedSpecialBonus</key>
-					<string>special_bonus_unique_troll_warlord_3</string>
-					<key>damage</key>
-					<string>100 150 200</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>02</key>
-				<dict>
-					<key>hit_radius</key>
-					<string>100</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>03</key>
-				<dict>
-					<key>max_range</key>
-					<string>450.0</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>04</key>
-				<dict>
-					<key>axe_movement_speed</key>
-					<string>1250</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>05</key>
-				<dict>
-					<key>blind_duration</key>
-					<string>5</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>06</key>
-				<dict>
-					<key>blind_pct</key>
-					<string>60</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>07</key>
-				<dict>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-					<key>whirl_duration</key>
-					<string>3.0</string>
-				</dict>
-			</dict>
-			<key>MaxLevel</key>
-			<string>3</string>
-		</dict>
-		<key>troll_warlord_whirling_axes_ranged</key>
-		<dict>
-			<key>AbilityBehavior</key>
-			<string>DOTA_ABILITY_BEHAVIOR_TARGET</string>
-			<key>AbilityCastAnimation</key>
-			<string>ACT_DOTA_CAST_ABILITY_1</string>
-			<key>AbilityCastPoint</key>
-			<string>0.3</string>
-			<key>AbilityCastRange</key>
-			<string>9999</string>
-			<key>AbilityCooldown</key>
-			<string>5</string>
-			<key>AbilityManaCost</key>
-			<string>0</string>
-			<key>AbilitySpecial</key>
-			<dict>
-				<key>01</key>
-				<dict>
-					<key>axe_width</key>
-					<string>100</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>02</key>
-				<dict>
-					<key>axe_speed</key>
-					<string>1500.0</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>03</key>
-				<dict>
-					<key>axe_range</key>
-					<string>1000.0</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>04</key>
-				<dict>
-					<key>LinkedSpecialBonus</key>
-					<string>special_bonus_unique_troll_warlord_3</string>
-					<key>axe_damage</key>
-					<string>75</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>05</key>
-				<dict>
-					<key>axe_slow_duration</key>
-					<string>2.5 3 3.5</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>06</key>
-				<dict>
-					<key>movement_speed</key>
-					<string>40</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>07</key>
-				<dict>
-					<key>axe_spread</key>
-					<string>25</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>08</key>
-				<dict>
-					<key>axe_count</key>
-					<string>5</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-			</dict>
-			<key>MaxLevel</key>
-			<string>3</string>
-		</dict>
 		<key>tt1</key>
 		<dict>
 			<key>AbilityBehavior</key>
@@ -17521,82 +17564,6 @@
 					<string>POINT</string>
 				</dict>
 			</dict>
-		</dict>
-		<key>venomancer_poison_nova</key>
-		<dict>
-			<key>AbilityCastPoint</key>
-			<string>0.5</string>
-			<key>AbilityCastRange</key>
-			<string>9999</string>
-			<key>AbilityCooldown</key>
-			<string>10</string>
-			<key>AbilityManaCost</key>
-			<string>100</string>
-			<key>AbilitySpecial</key>
-			<dict>
-				<key>01</key>
-				<dict>
-					<key>LinkedSpecialBonus</key>
-					<string>special_bonus_unique_venomancer_6</string>
-					<key>radius</key>
-					<string>600 700 800</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>02</key>
-				<dict>
-					<key>start_radius</key>
-					<string>255 255 255</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>03</key>
-				<dict>
-					<key>LinkedSpecialBonus</key>
-					<string>special_bonus_unique_venomancer_4</string>
-					<key>duration</key>
-					<string>10</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>04</key>
-				<dict>
-					<key>damage</key>
-					<string>60 90 120</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>05</key>
-				<dict>
-					<key>cooldown_scepter</key>
-					<string>140.0 120.0 60.0</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>06</key>
-				<dict>
-					<key>duration_scepter</key>
-					<string>18</string>
-					<key>var_type</key>
-					<string>FIELD_FLOAT</string>
-				</dict>
-				<key>07</key>
-				<dict>
-					<key>damage_scepter</key>
-					<string>100 150 200</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-				<key>08</key>
-				<dict>
-					<key>speed</key>
-					<string>500</string>
-					<key>var_type</key>
-					<string>FIELD_INTEGER</string>
-				</dict>
-			</dict>
-			<key>MaxLevel</key>
-			<string>3</string>
 		</dict>
 		<key>viper_viper_strike</key>
 		<dict>
@@ -18656,7 +18623,7 @@
 				<key>05</key>
 				<dict>
 					<key>bounces</key>
-					<string>4 6 8</string>
+					<string>5 7 9</string>
 					<key>var_type</key>
 					<string>FIELD_INTEGER</string>
 				</dict>
@@ -18679,7 +18646,7 @@
 					<key>LinkedSpecialBonus</key>
 					<string>special_bonus_unique_witch_doctor_3</string>
 					<key>bounces_tooltip</key>
-					<string>2 4 6</string>
+					<string>5 7 9</string>
 					<key>var_type</key>
 					<string>FIELD_INTEGER</string>
 				</dict>

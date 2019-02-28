@@ -83,7 +83,7 @@
     for (int i=1;i<self.level;i++)str = [NSString stringWithFormat:@"%@1",str];
 
     self.chess.chessDictionary = [manager units][str];
-    NSIndexSet* indexSet = [NSIndexSet indexSetWithIndex:1];
+    NSIndexSet* indexSet = [NSIndexSet indexSetWithIndex:2];
     [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationNone];
     [self.tableView reloadRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationNone];
 }
